@@ -1,0 +1,218 @@
+\documentclass[12pt, letterpaper]{article}
+\title{The map of Computer Science}
+\author{Petcu George Iulian}
+\usepackage{tabularx}
+\usepackage{minted}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+
+\section{Intro}
+
+
+\textbf{Computer Science} is the study of computers, computing processes, and information systems. It is a dynamic and ever-evolving field that plays a central role in modern society, powering everything from smartphones and websites to space exploration and artificial intelligence. At its core, Computer Science combines theoretical principles with practical problem-solving skills to design, analyze, and build software and hardware systems.
+Down below, we will discover different subfields from Computer Science and explore it's purpose.
+
+
+\section{Algorithms and Data Structures}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+
+\section{Programming Languages}
+
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+
+\section{Computer Arhitecture}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+\section{Operating Systems and Networks}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+
+\section{Software Engineering}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+\section{Databases and Information Retrieval}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+\section{Artificial Intelligence and Robotics}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+\section{Graphics}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+
+\section{Human Computer Interaction}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+\section{Computational Science}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+\section{Organizational Informatics}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+
+\section{Bioinformatics}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+\end{document}
