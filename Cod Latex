@@ -88,66 +88,68 @@ Down below, we will discover different subfields from Computer Science and explo
 \section{Software Engineering}
 
 \subsection*{Theory}
-Software engineering is the branch of computer science that deals with applying engineering principles to the development and maintenance of software systems. Its theoretical foundations come from computer science, applied mathematics, and systems science. Core elements include the software life cycle, development methodologies (such as Waterfall, Agile, DevOps), quality models, formal specification, and validation/verification.
+Ingineria software este domeniul informaticii care se ocupă cu aplicarea unor principii inginerești în dezvoltarea și întreținerea sistemelor software. Fundamentele teoretice provin din informatică, matematică aplicată și știința sistemelor. Elementele centrale includ ciclul de viață al software-ului, metodologii de dezvoltare (ca Waterfall, Agile, DevOps), modele de calitate, specificare formală și validare/verificare.
 
 \subsection*{Experiment}
-Experimental research in software engineering involves the empirical evaluation of software processes, techniques, and tools. This includes case studies, controlled experiments, and quantitative analysis to determine which practices produce more reliable, efficient, and maintainable software. Examples include comparing the effectiveness of Test-Driven Development (TDD) versus traditional development, or analyzing the impact of open-source code on team collaboration.
+Cercetarea experimentală în ingineria software constă în evaluarea empirică a proceselor, tehnicilor și instrumentelor software. Aceasta implică studii de caz, experimente controlate și analize cantitative pentru a înțelege ce metode produc software mai fiabil, mai eficient și mai ușor de întreținut. Exemple includ compararea eficienței între TDD (Test-Driven Development) și dezvoltarea clasică sau evaluarea impactului codului open-source asupra colaborării între echipe.
 
 \subsection*{Design}
-Software design is a crucial stage in developing information systems, where the overall architecture of the application and the internal organization of components are defined. Its main goal is to translate functional and non-functional requirements into a clear, coherent, and extensible structure.
+Designul software este o etapă esențială în dezvoltarea sistemelor informatice, în care se conturează arhitectura generală a aplicației și modul de organizare a componentelor interne. Scopul principal este de a traduce cerințele funcționale și non-funcționale într-o structură clară, coerentă și extensibilă.
 
-The design process includes:
+Etapele procesului de design includ:
 \begin{itemize}
-  \item \textbf{Architectural Design} – defines the overall system structure and how components interact. Examples of architectures include monolithic, layered, service-oriented (SOA), microservices, and event-driven.
-  \item \textbf{Detailed Design} – focuses on the implementation of individual modules using design patterns such as Singleton, Factory, Observer, or MVC (Model-View-Controller).
+  \item \textbf{Designul arhitectural} – stabilește structura de ansamblu a sistemului și modul în care componentele interacționează între ele. Exemple de arhitecturi includ monolitică, pe straturi (layered), orientată pe servicii (SOA), microservicii sau event-driven.
+  \item \textbf{Designul detaliat} – se concentrează pe implementarea efectivă a modulelor, folosind modele de proiectare (design patterns) precum Singleton, Factory, Observer sau MVC (Model-View-Controller).
 \end{itemize}
 
-A key tool in design is \textbf{UML (Unified Modeling Language)}, a standardized graphical language used to visualize, specify, construct, and document software system elements. UML provides a suite of diagrams that address different system perspectives:
+Un instrument esențial în activitatea de design este \textbf{UML (Unified Modeling Language)}, un limbaj grafic standardizat folosit pentru a vizualiza, specifica, construi și documenta elementele unui sistem software. UML oferă o colecție de diagrame care acoperă diferite aspecte ale sistemului:
 \begin{itemize}
-  \item \textbf{Class diagrams} – describe the static structure of the system using classes, attributes, methods, and relationships.
-  \item \textbf{Sequence diagrams} – highlight object interactions over time, useful for concrete scenarios.
-  \item \textbf{Use case diagrams} – illustrate functional requirements from the user's perspective and their interactions with the system.
-  \item \textbf{Activity diagrams} – model control and activity flows, useful for process logic.
-  \item \textbf{State diagrams} – show how an object changes state in response to events.
-  \item \textbf{Component and deployment diagrams} – describe the physical structure of the application and its runtime environment.
+  \item \textbf{Diagrame de clasă} – descriu structura statică a sistemului prin clase, atribute, metode și relații.
+  \item \textbf{Diagrame de secvență} – evidențiază interacțiunile dintre obiecte de-a lungul timpului, utile pentru scenarii concrete.
+  \item \textbf{Diagrame de caz de utilizare (use case)} – ilustrează cerințele funcționale din perspectiva utilizatorului și relațiile acestuia cu sistemul.
+  \item \textbf{Diagrame de activitate} – modelează fluxul de control și de activități, utile pentru logica proceselor.
+  \item \textbf{Diagrame de stare} – arată modul în care un obiect își schimbă starea în funcție de evenimentele primite.
+  \item \textbf{Diagrame de componente și de implementare} – sunt folosite pentru a descrie structura fizică a aplicației și a mediului în care aceasta rulează.
 \end{itemize}
 
-Using UML improves documentation clarity, facilitates effective team communication, and ensures a better understanding of system requirements and proposed solutions. It is technology-agnostic, making it suitable for a wide variety of software projects, from embedded applications to large distributed systems.
+Utilizarea UML contribuie la claritatea documentației, la o comunicare eficientă între membrii echipei și la o mai bună înțelegere a cerințelor și a soluțiilor propuse. Este un limbaj agnostic față de tehnologie, ceea ce îl face aplicabil într-o varietate de proiecte software, de la aplicații embedded până la sisteme distribuite mari.
+
 
 \subsection*{Relations with other subfields}
-Software engineering is closely connected to other areas of computer science. For example:
+Ingineria software este strâns legată de alte ramuri ale informaticii. De exemplu:
 \begin{itemize}
-  \item \textbf{Programming}: The foundation of software development relies on programming concepts, languages, and paradigms.
-  \item \textbf{Distributed systems}: Require advanced software engineering practices to manage complexity and scalability.
-  \item \textbf{Artificial Intelligence}: Software engineering is crucial for integrating AI systems into real-world applications.
-  \item \textbf{Human-Computer Interaction (HCI)}: User-centered design is essential for modern software success.
+  \item \textbf{Programare}: Fundamentele dezvoltării software se bazează pe concepte de programare, limbaje și paradigme.
+  \item \textbf{Sisteme distribuite}: Necesită practici avansate de inginerie software pentru a gestiona complexitatea și scalabilitatea.
+  \item \textbf{Inteligență artificială}: Ingineria software este esențială în integrarea sistemelor AI în aplicații reale.
+  \item \textbf{Interacțiune om-calculator (HCI)}: Designul centrat pe utilizator este crucial pentru succesul software-ului modern.
 \end{itemize}
 
 \subsection*{Major problems}
-Key challenges in software engineering include:
+Printre principalele provocări din ingineria software se numără:
 \begin{itemize}
-  \item \textbf{Managing complexity}: Large systems become difficult to understand and maintain.
-  \item \textbf{Software quality}: Ensuring reliability, security, and performance in a competitive environment.
-  \item \textbf{Evolving requirements}: User and market needs change rapidly.
-  \item \textbf{Cost and time estimation}: A notoriously unpredictable aspect of software projects.
+  \item \textbf{Gestionarea complexității}: Sistemele mari devin greu de înțeles și întreținut.
+  \item \textbf{Calitatea software-ului}: Asigurarea fiabilității, securității și performanței într-un mediu competitiv.
+  \item \textbf{Evoluția cerințelor}: Cerințele utilizatorilor și ale pieței se schimbă rapid.
+  \item \textbf{Estimarea costurilor și a duratei de dezvoltare}: Un aspect notoriu de imprevizibil.
 \end{itemize}
 
 \subsection*{Influential figures}
-Some of the most important pioneers in the field include:
+Câțiva dintre cei mai importanți pionieri ai domeniului sunt:
 \begin{itemize}
-  \item \textbf{Margaret Hamilton} – Led the development of Apollo mission software; helped popularize the term "software engineering."
-  \item \textbf{Barry Boehm} – Author of the Spiral Model and promoter of cost-benefit analysis in software development.
-  \item \textbf{Fred Brooks} – Author of the classic book \emph{The Mythical Man-Month}, which highlights the difficulties of scaling software teams.
-  \item \textbf{Grady Booch} – One of the creators of UML and advocate of object-oriented methodologies.
+  \item \textbf{Margaret Hamilton} – A coordonat dezvoltarea software-ului pentru misiunea Apollo; a popularizat termenul „software engineering”.
+  \item \textbf{Barry Boehm} – Autorul modelului Spiral și promotor al conceptului de cost-benefit în dezvoltarea software.
+  \item \textbf{Fred Brooks} – Autorul lucrării clasice \emph{The Mythical Man-Month}, care evidențiază dificultățile scalării echipelor software.
+  \item \textbf{Grady Booch} – Unul dintre creatorii UML și promotor al metodologiilor orientate pe obiect.
 \end{itemize}
 
 \subsection*{Key forums}
-The software engineering community has several essential knowledge-sharing forums:
+Comunitatea de inginerie software are mai multe forumuri esențiale pentru schimbul de cunoștințe:
 \begin{itemize}
-  \item \textbf{Conferences}: ICSE (International Conference on Software Engineering), FSE (Foundations of Software Engineering), ASE (Automated Software Engineering).
-  \item \textbf{Journals}: IEEE Transactions on Software Engineering, Empirical Software Engineering, Journal of Systems and Software.
-  \item \textbf{Online communities}: Stack Overflow, GitHub, Reddit (e.g., \texttt{r/softwareengineering}).
+  \item \textbf{Conferințe}: ICSE (International Conference on Software Engineering), FSE (Foundations of Software Engineering), ASE (Automated Software Engineering).
+  \item \textbf{Jurnale}: IEEE Transactions on Software Engineering, Empirical Software Engineering, Journal of Systems and Software.
+  \item \textbf{Comunități online}: Stack Overflow, GitHub, Reddit (subreddits precum \texttt{r/softwareengineering}).
 \end{itemize}
+
 
 \newpage
 \section{Databases and Information Retrieval}
