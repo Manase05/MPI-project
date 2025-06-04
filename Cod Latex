@@ -86,19 +86,68 @@ Down below, we will discover different subfields from Computer Science and explo
 \newpage
 
 \section{Software Engineering}
+
 \subsection*{Theory}
+Software engineering is the branch of computer science that deals with applying engineering principles to the development and maintenance of software systems. Its theoretical foundations come from computer science, applied mathematics, and systems science. Core elements include the software life cycle, development methodologies (such as Waterfall, Agile, DevOps), quality models, formal specification, and validation/verification.
 
 \subsection*{Experiment}
+Experimental research in software engineering involves the empirical evaluation of software processes, techniques, and tools. This includes case studies, controlled experiments, and quantitative analysis to determine which practices produce more reliable, efficient, and maintainable software. Examples include comparing the effectiveness of Test-Driven Development (TDD) versus traditional development, or analyzing the impact of open-source code on team collaboration.
 
 \subsection*{Design}
+Software design is a crucial stage in developing information systems, where the overall architecture of the application and the internal organization of components are defined. Its main goal is to translate functional and non-functional requirements into a clear, coherent, and extensible structure.
+
+The design process includes:
+\begin{itemize}
+  \item \textbf{Architectural Design} – defines the overall system structure and how components interact. Examples of architectures include monolithic, layered, service-oriented (SOA), microservices, and event-driven.
+  \item \textbf{Detailed Design} – focuses on the implementation of individual modules using design patterns such as Singleton, Factory, Observer, or MVC (Model-View-Controller).
+\end{itemize}
+
+A key tool in design is \textbf{UML (Unified Modeling Language)}, a standardized graphical language used to visualize, specify, construct, and document software system elements. UML provides a suite of diagrams that address different system perspectives:
+\begin{itemize}
+  \item \textbf{Class diagrams} – describe the static structure of the system using classes, attributes, methods, and relationships.
+  \item \textbf{Sequence diagrams} – highlight object interactions over time, useful for concrete scenarios.
+  \item \textbf{Use case diagrams} – illustrate functional requirements from the user's perspective and their interactions with the system.
+  \item \textbf{Activity diagrams} – model control and activity flows, useful for process logic.
+  \item \textbf{State diagrams} – show how an object changes state in response to events.
+  \item \textbf{Component and deployment diagrams} – describe the physical structure of the application and its runtime environment.
+\end{itemize}
+
+Using UML improves documentation clarity, facilitates effective team communication, and ensures a better understanding of system requirements and proposed solutions. It is technology-agnostic, making it suitable for a wide variety of software projects, from embedded applications to large distributed systems.
 
 \subsection*{Relations with other subfields}
+Software engineering is closely connected to other areas of computer science. For example:
+\begin{itemize}
+  \item \textbf{Programming}: The foundation of software development relies on programming concepts, languages, and paradigms.
+  \item \textbf{Distributed systems}: Require advanced software engineering practices to manage complexity and scalability.
+  \item \textbf{Artificial Intelligence}: Software engineering is crucial for integrating AI systems into real-world applications.
+  \item \textbf{Human-Computer Interaction (HCI)}: User-centered design is essential for modern software success.
+\end{itemize}
 
 \subsection*{Major problems}
+Key challenges in software engineering include:
+\begin{itemize}
+  \item \textbf{Managing complexity}: Large systems become difficult to understand and maintain.
+  \item \textbf{Software quality}: Ensuring reliability, security, and performance in a competitive environment.
+  \item \textbf{Evolving requirements}: User and market needs change rapidly.
+  \item \textbf{Cost and time estimation}: A notoriously unpredictable aspect of software projects.
+\end{itemize}
 
-\subsection*{Influencial figures}
+\subsection*{Influential figures}
+Some of the most important pioneers in the field include:
+\begin{itemize}
+  \item \textbf{Margaret Hamilton} – Led the development of Apollo mission software; helped popularize the term "software engineering."
+  \item \textbf{Barry Boehm} – Author of the Spiral Model and promoter of cost-benefit analysis in software development.
+  \item \textbf{Fred Brooks} – Author of the classic book \emph{The Mythical Man-Month}, which highlights the difficulties of scaling software teams.
+  \item \textbf{Grady Booch} – One of the creators of UML and advocate of object-oriented methodologies.
+\end{itemize}
 
 \subsection*{Key forums}
+The software engineering community has several essential knowledge-sharing forums:
+\begin{itemize}
+  \item \textbf{Conferences}: ICSE (International Conference on Software Engineering), FSE (Foundations of Software Engineering), ASE (Automated Software Engineering).
+  \item \textbf{Journals}: IEEE Transactions on Software Engineering, Empirical Software Engineering, Journal of Systems and Software.
+  \item \textbf{Online communities}: Stack Overflow, GitHub, Reddit (e.g., \texttt{r/softwareengineering}).
+\end{itemize}
 
 \newpage
 \section{Databases and Information Retrieval}
