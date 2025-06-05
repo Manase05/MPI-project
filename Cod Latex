@@ -298,99 +298,59 @@ Design activities in HCI focus on:
 \section{Organizational Informatics}
 
 \subsection*{Theory}
-\textit{Organizational Informatics}, a term popularized by \emph{Peter J. Denning} (1989), investigates how
-information systems underpin workflow and decision-making in companies.  
-Business rules (e.g.\ “purchases above €10 k require CFO approval”) are translated into propositional-logic
-formulas that are conjoined into a single expression \(\Phi\).  
-\(\Phi\) is converted to \emph{Conjunctive Normal Form} (CNF) by eliminating implications, pushing negations
-inward, and distributing disjunction over conjunction.  
-Consistency is then checked with three classical SAT algorithms:
-
-\begin{itemize}
-  \item \textbf{Resolution} — iteratively adds resolvents until contradiction or saturation;
-  \item \textbf{Davis–Putnam} (DP) — removes variables through systematic resolution steps;
-  \item \textbf{DPLL} — recursive backtracking with unit-propagation pruning.
-\end{itemize}
-
-\vspace{0.5em}
-\noindent\textbf{Sample CNF file (DIMACS)} — excerpt (mapping: \(S{=}1,\,C{=}5,\dots\)):
-\begin{minted}[fontsize=\small]{text}
-p cnf 10 7
--1  5    0        % ¬S ∨ C
--1  4    0        % ¬S ∨ D
- 2  4    0        %  M ∨ D
--6 -2  4 0        % ¬S2 ∨ ¬M ∨ D
--9  6    0        % ¬R ∨ J
--10 7    0        % ¬T ∨ K
--8 -2   0        % ¬I ∨ ¬M
-\end{minted}
+Organizational Informatics (OI) looks at how information systems help people do their jobs and make decisions inside a company.  It treats an organisation as a network of tasks, rules, and data that must stay in sync.  Key ideas are business rules (who can approve what), workflows (how work moves from A to B), and feedback (using data to improve the process).  Effective OI shows clearly where software supports everyday work and where it gets in the way.  In short, it is about matching technology with day-to-day reality so the whole system runs smoothly.
 
 \subsection*{Experiment}
-Two rule sets were evaluated with the Java implementation at
-\url{https://github.com/claudiucalugaru97/MPIProiect}:
-
-\begin{description}
-  \item[Test 1 — R1 (minimal scenario)] \hfill\\
-    Variables: \(S,M,D,C\).  
-    Clauses: \(\neg S\!\lor\!C\), \(\neg S\!\lor\!D\), \(M\!\lor\!D\).  
-    \textbf{Results}: SAT — Resolution 2 ms, DP 2 ms, DPLL 1 ms.
-  \item[Test 2 — R2 (extended scenario)] \hfill\\
-    Additional variables: \(S2,J,K,R\).  
-    New clauses: \(\neg S2\!\lor\!\neg M\!\lor\!D\), \(\neg R\!\lor\!J\), \(\neg T\!\lor\!K\).  
-    \textbf{Results}: SAT — Resolution 65 ms, DP 60 ms, DPLL 15 ms (redundant director rules flagged).
-\end{description}
+Researchers test OI ideas by watching real companies before and after they install new software.  They collect numbers such as task time, error counts, and user satisfaction, and also run interviews to catch things numbers miss.  Field studies compare different teams or branches to see what practices work well.  A common theme is checking whether promised savings or faster work actually show up. Since every company works differently, researchers look at several organizations to see if their findings still make sense elsewhere.
 
 \subsection*{Design}
-\begin{enumerate}
-  \item \textbf{Rule extraction}: identify organisational policies.
-  \item \textbf{Logic translation}: e.g.\ \(S \rightarrow C\).
-  \item \textbf{CNF conversion}: e.g.\ \(S\!\rightarrow\!C \;\Rightarrow\; \neg S \lor C\).
-  \item \textbf{SAT solving}: run the CNF with Resolution, DP, DPLL and benchmark against \texttt{Sat4j}.
-  \item \textbf{Analysis}: inspect SAT/UNSAT status and highlight redundant clauses.
-\end{enumerate}
+Design work in OI starts by mapping the current workflow with a Kanban board—a visual board where tasks move through columns like “To Do”, “In Progress”, and “Done”—or by jotting down a quick list of steps.  The team then asks where software helps and where it slows people down.  They streamline clunky steps, add clear checkpoints, and build quick prototypes so users can test ideas early.  They favor building the system as small, independent pieces that send messages to each other, so changing one piece doesn’t break the rest.  The goal is smoother teamwork and clearer, faster decisions, not automation for its own sake.
 
 \subsection*{Relations with other subfields}
-\vspace{-0.3em}
-\begin{itemize}
-  \item \textbf{Algorithms}: Resolution and DPLL are canonical SAT-solver algorithms.
-  \item \textbf{Software Engineering}: rule validation integrates into CI pipelines.
-  \item \textbf{Databases}: rules are versioned alongside transactional data.
-  \item \textbf{Artificial Intelligence}: SAT solving shares techniques with logical reasoning systems.
-\end{itemize}
+OI borrows from Databases for reliable storage and tracking, and from Software Engineering to turn business rules into code.  It uses AI for dashboards that predict trends and flag risks.  Concepts from Human–Computer Interaction help make enterprise apps usable, while Networking enables remote teams to share the same workflow.  Thus OI sits at the crossroads of tech and management.
 
 \subsection*{Major problems}
 \begin{itemize}
-  \item \textbf{NP-complete}: worst-case exploration grows exponentially.
-  \item \textbf{Scalability}: Resolution slows on large clause sets.
-  \item \textbf{Redundancy}: overlapping rules (e.g.\ manager vs.\ director) are hard to spot manually.
-  \item \textbf{Max-SAT}: when \(\Phi\) is UNSAT, a Max-SAT relaxation pinpoints the smallest set of rules to drop.
-  \item \textbf{Logical expressiveness}: propositional logic cannot state complex arithmetic constraints.
-\end{itemize}
-
-\subsubsection*{Implementation notes}
-\begin{itemize}
-  \item \textbf{Resolution}: exhaustive saturation until contradiction or fix-point.
-  \item \textbf{Davis–Putnam}: variable elimination while preserving satisfiability.
-  \item \textbf{DPLL}: backtracking search with unit propagation and intelligent backjumping.
-  \item \textbf{Sat4j}: used solely as a performance baseline against the classic in-house implementations.
+  \item \textbf{Old systems linger} – legacy software is costly and risky to replace.
+  \item \textbf{Isolated data} – teams can’t access each other’s information, so reports are incomplete.
+  \item \textbf{Change resistance} – staff often prefer familiar routines to new digital workflows.
+  \item \textbf{Tougher privacy rules} – laws like GDPR raise the bar on storing and sharing data.
+  \item \textbf{Device explosion} – IoT and mobile apps make consistency and security harder.
+  \item \textbf{ROI is fuzzy} – it’s hard to measure the real payoff of collaboration platforms.
+  \item \textbf{Opaque algorithms} – firms must balance transparency with protecting trade secrets.
 \end{itemize}
 
 \subsection*{Influential figures}
 \begin{itemize}
-  \item \textbf{Martin Davis, George Logemann \& Donald Loveland} — DPLL search procedure (1962).
-  \item \textbf{J. Alan Robinson} — Resolution rule (1965).
-  \item \textbf{Peter J. Denning} — framed “Organizational Informatics” (1989).
-  \item \textbf{João P. Marques-Silva \& Karem A. Sakallah} — clause-learning optimisations.
-  \item \textbf{Armin Biere} — drove SAT competitions and co-edited the \emph{Handbook of Satisfiability}.
+  \item \textbf{Peter J.\ Denning} – Highlighted the role of information practices within computer science and urged designers to align systems with organisational reality; his work laid the conceptual foundations of OI.
+  \item \textbf{Shoshana Zuboff} – Coined “informate” to describe how digital systems both automate work and create new data about that work, reshaping power and control inside firms.
+  \item \textbf{Thomas H.\ Davenport} – Popularised business-process re-engineering and analytics-driven management, providing managers with practical templates for data-centred decision-making.
+  \item \textbf{Jay R.\ Galbraith} – Developed the STAR model (strategy, structure, processes, rewards, people) that helps organisations match IT capabilities with corporate structure.
+  \item \textbf{Andrew McAfee} – Explores how enterprise social platforms, big data, and AI transform collaboration and productivity in large organisations (“Enterprise 2.0”).
 \end{itemize}
 
 \subsection*{Key forums}
 \begin{itemize}
-  \item \textbf{International SAT Conference} — cutting-edge SAT algorithms.
-  \item \textbf{RuleML \& RR Symposium} — business-rule modelling and validation.
-  \item \textbf{International Conference on Information Systems (ICIS)} — enterprise case studies.
-  \item \textbf{Academy of Management – OCIS division} — digital transformation of organisational processes.
-  \item \textbf{Sat4j GitHub community} — support and examples for integrating SAT solvers in Java apps.
+  \item \textbf{Conferences}
+    \begin{itemize}
+      \item \textit{ICIS} – International Conference on Information Systems
+      \item \textit{ECIS} – European Conference on Information Systems
+      \item \textit{ACM SIGMIS‐CPR} – Computers and People Research symposium
+    \end{itemize}
+  \item \textbf{Journals}
+    \begin{itemize}
+      \item \textit{MIS Quarterly (MISQ)}
+      \item \textit{Journal of the Association for Information Systems (JAIS)}
+    \end{itemize}
+  \item \textbf{Practitioner outlet}
+    \begin{itemize}
+      \item \textit{Harvard Business Review} – management insights and case studies
+    \end{itemize}
+  \item \textbf{Online communities}
+    \begin{itemize}
+      \item AIS Discussion Board – academic Q\&A
+      \item Reddit \texttt{r/InformationSystems} – informal discussion and trend spotting
+    \end{itemize}
 \end{itemize}
 
 \newpage
