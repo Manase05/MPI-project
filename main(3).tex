@@ -1,0 +1,681 @@
+
+\documentclass[12pt, letterpaper]{article}
+\title{The map of Computer Science}
+\author{Petcu George Iulian}
+\usepackage{tabularx}
+\usepackage{minted}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+
+\section{Intro}
+
+
+\textbf{Computer Science} is the study of computers, computing processes, and information systems. It is a dynamic and ever-evolving field that plays a central role in modern society, powering everything from smartphones and websites to space exploration and artificial intelligence. At its core, Computer Science combines theoretical principles with practical problem-solving skills to design, analyze, and build software and hardware systems.
+Down below, we will discover different subfields from Computer Science and explore it's purpose.
+
+
+\section{Algorithms and Data Structures}
+
+\subsection*{Theory}
+Algoritmii și structurile de date reprezintă fundamentul teoretic al informaticii. Algoritmii sunt pași sistematici pentru rezolvarea problemelor, iar structurile de date sunt metode organizate de stocare și manipulare a informațiilor. Studiul teoretic implică analiza complexității (timp și memorie), utilizarea recursivității, teoria grafurilor și diverse concepte matematice. Notarea Big-O este esențială pentru estimarea eficienței algoritmilor.
+
+\subsection*{Experiment}
+Experimentarea în acest domeniu presupune aplicarea practică a soluțiilor și validarea performanței acestora. Prin rularea algoritmilor pe date reale sau sintetice, se observă comportamente care nu reies întotdeauna din analiza teoretică. Astfel, experimentarea devine un proces important în dezvoltarea de soluții robuste și eficiente.
+
+\subsection*{Design}
+Proiectarea algoritmilor și structurilor de date necesită atât logică riguroasă, cât și creativitate.
+\begin{itemize}
+    \item Se folosesc tehnici clasice precum divide et impera, algoritmi lacomi sau programare dinamică.
+    \item Se alege structura de date potrivită — liste, arbori, tabele de dispersie, grafuri — în funcție de problemă.
+    \item Se urmărește obținerea unui echilibru între performanță, claritate și întreținere a codului.
+\end{itemize}
+
+\subsection*{Relations with other subfields}
+Algoritmii și structurile de date sunt utilizate în aproape toate ramurile informaticii:
+\begin{itemize}
+    \item Inteligență artificială — pentru căutare, optimizare și luarea deciziilor.
+    \item Baze de date — pentru organizarea eficientă a informațiilor și interogări rapide.
+    \item Sisteme de operare — pentru programarea proceselor, alocarea memoriei și gestionarea fișierelor.
+    \item Securitate informatică — pentru criptare, hashing și detecția anomaliilor.
+\end{itemize}
+
+\subsection*{Major problems}
+În ciuda progreselor, domeniul se confruntă cu o serie de probleme deschise. Cea mai cunoscută este \textit{P vs NP}, care pune sub semnul întrebării capacitatea de a găsi soluții rapide pentru problemele a căror soluție poate fi verificată rapid. Alte provocări includ optimizarea algoritmilor paraleli, proiectarea de structuri de date pentru volume mari de date și găsirea unor metode eficiente pentru probleme de grafuri complexe.
+
+\subsection*{Influencial figures}
+Domeniul a fost influențat de cercetători de renume mondial:
+\begin{itemize}
+    \item \textbf{Donald Knuth} — autorul lucrării \textit{The Art of Computer Programming}, considerată un pilon al informaticii.
+    \item \textbf{Edsger Dijkstra} — a adus contribuții majore la programarea structurată și a creat algoritmul de drum minim.
+    \item \textbf{Robert Tarjan} — cunoscut pentru structuri de date avansate și algoritmi pe grafuri.
+\end{itemize}
+
+\subsection*{Key forums}
+Există multiple platforme și conferințe unde comunitatea academică și profesională se întâlnește pentru a discuta despre algoritmi și structuri de date:
+\begin{itemize}
+    \item \textit{Symposium on Theory of Computing (STOC)}
+    \item \textit{Foundations of Computer Science (FOCS)}
+    \item \textit{European Symposium on Algorithms (ESA)}
+    \item Comunități online: Stack Overflow, GitHub, LeetCode
+\end{itemize}
+
+\newpage
+
+\section{Programming Languages}
+
+\subsection*{Theory}
+Teoria limbajelor de programare analizează conceptele fundamentale din spatele limbajelor de programare, precum tipurile de date, controlul fluxului, funcțiile, recursivitatea și mecanismele de abstractizare. Se studiază semantica limbajelor (operațională, axiomatică, denotațională), sintaxa formală (gramatici) și paradigmele de programare, precum cea imperativă, funcțională, logică sau orientată pe obiect.
+
+\subsection*{Experiment}
+Experimentarea în acest domeniu presupune crearea de prototipuri de limbaje noi sau compararea performanței între diferite limbaje:
+\begin{itemize}
+    \item Implementarea interpretoarelor sau compilatoarelor.
+    \item Testarea limbajelor în scenarii reale (ex: dezvoltare web, sisteme embedded).
+    \item Analiza performanței, lizibilității și expresivității limbajelor.
+    \item Observarea adoptării limbajelor de către comunități de dezvoltatori.
+\end{itemize}
+
+\subsection*{Design}
+Proiectarea unui limbaj de programare implică un echilibru între puterea expresivă, siguranța utilizatorului și eficiența execuției.
+\begin{itemize}
+    \item Alegerea paradigmei (imperativ, funcțional, hibrid).
+    \item Definirea sistemului de tipuri (static, dinamic, dependent).
+    \item Conceperea unei sintaxe clare și intuitive.
+    \item Crearea unei biblioteci standard coerente și utile.
+\end{itemize}
+
+\subsection*{Relations with other subfields}
+Domeniul este strâns legat de alte ramuri ale informaticii:
+\begin{itemize}
+    \item Teoria automatelor și limbajelor formale — pentru analiza sintactică.
+    \item Ingineria software — deoarece limbajele influențează direct practicile de programare.
+    \item Securitate informatică — anumite limbaje previn vulnerabilități prin design.
+    \item Inteligență artificială — dezvoltarea de limbaje declarative pentru exprimarea cunoștințelor.
+\end{itemize}
+
+\subsection*{Major problems}
+Printre dificultățile întâmpinate în acest domeniu se numără:
+\begin{itemize}
+    \item Echilibrarea între complexitate și expresivitate.
+    \item Compatibilitatea inversă cu versiuni mai vechi.
+    \item Crearea unor unelte de dezvoltare (tooling) eficiente.
+    \item Menținerea performanței fără a compromite siguranța tipurilor.
+\end{itemize}
+
+\subsection*{Influencial figures}
+Mai mulți cercetători și programatori au marcat evoluția limbajelor de programare:
+\begin{itemize}
+    \item \textbf{Dennis Ritchie} — creatorul limbajului C.
+    \item \textbf{Bjarne Stroustrup} — autorul limbajului C++.
+    \item \textbf{Guido van Rossum} — creatorul limbajului Python.
+    \item \textbf{Barbara Liskov} — pionier în programarea orientată pe obiect și sisteme de tipuri.
+    \item \textbf{John McCarthy} — inventatorul limbajului Lisp.
+\end{itemize}
+
+\subsection*{Key forums}
+Comunitatea cercetătorilor și practicienilor se întâlnește în cadrul unor conferințe și platforme dedicate:
+\begin{itemize}
+    \item \textit{POPL (Principles of Programming Languages)}
+    \item \textit{PLDI (Programming Language Design and Implementation)}
+    \item \textit{ICFP (International Conference on Functional Programming)}
+    \item Forumuri online: Stack Overflow, Reddit (r/programming), Compiler Explorer, GitHub
+\end{itemize}
+
+
+\newpage
+
+\section{Computer Architecture}
+
+\subsection*{Theory}
+Computer Architecture este domeniul care studiază structura internă și comportamentul sistemelor de calcul. Teoria se concentrează pe modul în care componentele hardware — procesorul, memoria, magistralele, dispozitivele de intrare/ieșire — colaborează pentru a executa instrucțiuni. Se definesc concepte esențiale precum arhitectura Von Neumann, paralelismul la nivel de instrucțiune, seturile de instrucțiuni (ISA), cache-urile și organizarea memoriei.
+
+\subsection*{Experiment}
+Experimentarea în arhitectura calculatoarelor are un rol crucial în validarea ideilor teoretice și în măsurarea performanței reale a sistemelor. Inginerii folosesc simulatoare pentru a testa arhitecturi propuse, analizând comportamentul acestora înainte de implementarea fizică. Alte experimente includ rularea de benchmark-uri pe sisteme existente pentru a înțelege impactul diverselor configurații hardware asupra vitezei, consumului energetic și eficienței generale. În cercetarea avansată, sunt comparate diverse soluții de procesare paralelă, arhitecturi multicore sau acceleratoare specializate, cum ar fi cele pentru inteligență artificială.
+
+\subsection*{Design}
+Procesul de proiectare a unei arhitecturi de calculator implică o serie de decizii fundamentale care influențează compatibilitatea, performanța și eficiența energetică a sistemului. Se începe de obicei cu alegerea setului de instrucțiuni (ISA), care definește modul în care software-ul comunică cu hardware-ul. Apoi urmează organizarea pipeline-ului pentru executarea instrucțiunilor, proiectarea ierarhiei memoriei și alegerea mecanismelor de paralelism. De asemenea, se iau în considerare elemente moderne, precum integrarea unităților grafice, a procesorului de rețea sau a acceleratorilor de tip NPU. Toate aceste decizii trebuie echilibrate astfel încât să se atingă obiectivele de performanță fără a compromite scalabilitatea sau consumul energetic.
+
+\subsection*{Relations with other subfields}
+Acest domeniu se leagă profund de:
+\begin{itemize}
+    \item Sisteme de operare — care interacționează direct cu hardware-ul.
+    \item Inginerie software — codul trebuie optimizat în funcție de arhitectura mașinii.
+    \item Rețelistică — pentru comunicația între arhitecturi distribuite.
+    \item Inteligență artificială — noile acceleratoare sunt proiectate special pentru AI.
+\end{itemize}
+
+\subsection*{Major problems}
+Provocările actuale din domeniu sunt tot mai complexe:
+\begin{itemize}
+    \item Limitările legii lui Moore și stagnarea frecvențelor procesorului.
+    \item Consumul de energie în creștere la procesoare de mare performanță.
+    \item Necesitatea de acceleratoare dedicate pentru aplicații AI.
+    \item Securitatea la nivel hardware (ex: vulnerabilități ca Spectre și Meltdown).
+\end{itemize}
+
+\subsection*{Influencial figures}
+Câteva figuri remarcabile au influențat profund arhitectura calculatoarelor:
+\begin{itemize}
+    \item \textbf{John von Neumann} — a definit modelul fundamental al arhitecturii moderne.
+    \item \textbf{Gordon Bell} — pionier în proiectarea sistemelor PDP și VAX.
+    \item \textbf{David Patterson} — coautor al arhitecturii RISC și RISC-V.
+    \item \textbf{John L. Hennessy} — coautor al lucrării de referință „Computer Architecture: A Quantitative Approach”.
+\end{itemize}
+
+\subsection*{Key forums}
+Comunitatea de arhitectură este activă în jurul unor conferințe și platforme de top:
+\begin{itemize}
+    \item \textit{ISCA (International Symposium on Computer Architecture)}
+    \item \textit{MICRO (IEEE/ACM International Symposium on Microarchitecture)}
+    \item \textit{HPCA (High Performance Computer Architecture)}
+    \item \textit{arXiv CS.AR}, GitHub (RISC-V), Stack Overflow, forumuri ale comunității ARM
+\end{itemize}
+
+
+\newpage
+
+\section{Operating Systems and Networks}
+
+\subsection*{Theory}
+Teoria sistemelor de operare și a rețelelor de calcul se concentrează pe gestionarea resurselor hardware și pe comunicarea eficientă între sisteme. În ceea ce privește sistemele de operare, conceptele esențiale includ planificarea proceselor, gestionarea memoriei, sistemele de fișiere și controlul accesului. În rețelistică, se studiază modelele de comunicație, cum ar fi modelul OSI sau TCP/IP, protocoale de rețea, rutare, congestionare și securitate în transmisie.
+
+\subsection*{Experiment}
+Experimentele în aceste domenii sunt frecvente atât în mediul academic, cât și în industrie.
+\begin{itemize}
+    \item Testarea performanței multitasking-ului și a rutinei de scheduling în OS-uri.
+    \item Utilizarea mașinilor virtuale pentru a simula diferite arhitecturi de sistem.
+    \item Experimentarea cu protocoale de rețea folosind Wireshark sau Mininet.
+    \item Testarea securității rețelelor prin atacuri controlate în laboratoare virtuale.
+\end{itemize}
+
+\subsection*{Design}
+Proiectarea unui sistem de operare sau a unei rețele eficiente este un proces complex care implică atât aspecte hardware, cât și software. La nivelul sistemelor de operare, designul trebuie să asigure o gestionare echitabilă a resurselor, protecție între procese și o interfață ușor de utilizat pentru aplicații. Arhitectura modulară, microkernel vs monolitic, sistemele de fișiere journaling și controlul accesului sunt decizii critice în această etapă. În ceea ce privește rețelele, designul include alegerea protocoalelor potrivite, configurarea topologiei, asigurarea redundanței și gestionarea traficului. Este important ca ambele componente – OS și rețea – să coopereze eficient pentru a susține aplicații moderne distribuite.
+
+\subsection*{Relations with other subfields}
+Acest domeniu este interconectat cu:
+\begin{itemize}
+    \item Arhitectura calculatoarelor — pentru interfața directă cu hardware-ul.
+    \item Securitate cibernetică — pentru protecția datelor și a comunicației.
+    \item Inteligență artificială — în special pentru rețele autonome și managementul resurselor.
+    \item Cloud computing — unde OS-urile și rețelele gestionează resurse virtualizate la scară mare.
+\end{itemize}
+
+\subsection*{Major problems}
+Unul dintre cele mai mari obstacole în dezvoltarea sistemelor de operare este asigurarea securității și izolării între procese, mai ales în contextul executării codului nedemn de încredere. De asemenea, scalabilitatea sistemelor de operare moderne devine o problemă semnificativă, mai ales în arhitecturi multicore sau distribuie. În ceea ce privește rețelele, dificultățile apar din nevoia de a asigura latențe mici și rate mari de transfer în contextul traficului exploziv generat de aplicații video și IoT. Problemele de congestionare, atacuri DDoS și limitările impuse de IPv4 rămân de asemenea provocări semnificative. Nu în ultimul rând, interoperabilitatea între sisteme și protocoale diferite este o temă deschisă în designul rețelelor globale.
+
+\subsection*{Influencial figures}
+Câțiva pionieri importanți au marcat acest domeniu:
+\begin{itemize}
+    \item \textbf{Ken Thompson} și \textbf{Dennis Ritchie} — creatori ai sistemului de operare UNIX.
+    \item \textbf{Andrew S. Tanenbaum} — autor al sistemului MINIX și lucrări de referință în domeniu.
+    \item \textbf{Vint Cerf} și \textbf{Bob Kahn} — „părinții Internetului”, autori ai protocolului TCP/IP.
+    \item \textbf{Linus Torvalds} — inițiatorul nucleului Linux, folosit pe scară largă.
+\end{itemize}
+
+\subsection*{Key forums}
+Cercetarea și dezvoltarea în domeniu se concentrează în jurul următoarelor conferințe și comunități:
+\begin{itemize}
+    \item \textit{USENIX Annual Technical Conference}
+    \item \textit{ACM SIGCOMM (Special Interest Group on Data Communication)}
+    \item \textit{IEEE INFOCOM}
+    \item \textit{arXiv Networking}, forumuri precum Stack Overflow, NetDevConf și grupuri de dezvoltatori Linux
+\end{itemize}
+
+
+\newpage
+
+\section{Software Engineering}
+
+\subsection*{Theory}
+Ingineria software este domeniul informaticii care se ocupă cu aplicarea unor principii inginerești în dezvoltarea și întreținerea sistemelor software. Fundamentele teoretice provin din informatică, matematică aplicată și știința sistemelor. Elementele centrale includ ciclul de viață al software-ului, metodologii de dezvoltare (ca Waterfall, Agile, DevOps), modele de calitate, specificare formală și validare/verificare.
+
+\subsection*{Experiment}
+Cercetarea experimentală în ingineria software constă în evaluarea empirică a proceselor, tehnicilor și instrumentelor software. Aceasta implică studii de caz, experimente controlate și analize cantitative pentru a înțelege ce metode produc software mai fiabil, mai eficient și mai ușor de întreținut. Exemple includ compararea eficienței între TDD (Test-Driven Development) și dezvoltarea clasică sau evaluarea impactului codului open-source asupra colaborării între echipe.
+
+\subsection*{Design}
+Designul software este o etapă esențială în dezvoltarea sistemelor informatice, în care se conturează arhitectura generală a aplicației și modul de organizare a componentelor interne. Scopul principal este de a traduce cerințele funcționale și non-funcționale într-o structură clară, coerentă și extensibilă.
+
+Etapele procesului de design includ:
+\begin{itemize}
+  \item \textbf{Designul arhitectural} – stabilește structura de ansamblu a sistemului și modul în care componentele interacționează între ele. Exemple de arhitecturi includ monolitică, pe straturi (layered), orientată pe servicii (SOA), microservicii sau event-driven.
+  \item \textbf{Designul detaliat} – se concentrează pe implementarea efectivă a modulelor, folosind modele de proiectare (design patterns) precum Singleton, Factory, Observer sau MVC (Model-View-Controller).
+\end{itemize}
+
+Un instrument esențial în activitatea de design este \textbf{UML (Unified Modeling Language)}, un limbaj grafic standardizat folosit pentru a vizualiza, specifica, construi și documenta elementele unui sistem software. UML oferă o colecție de diagrame care acoperă diferite aspecte ale sistemului:
+\begin{itemize}
+  \item \textbf{Diagrame de clasă} – descriu structura statică a sistemului prin clase, atribute, metode și relații.
+  \item \textbf{Diagrame de secvență} – evidențiază interacțiunile dintre obiecte de-a lungul timpului, utile pentru scenarii concrete.
+  \item \textbf{Diagrame de caz de utilizare (use case)} – ilustrează cerințele funcționale din perspectiva utilizatorului și relațiile acestuia cu sistemul.
+  \item \textbf{Diagrame de activitate} – modelează fluxul de control și de activități, utile pentru logica proceselor.
+  \item \textbf{Diagrame de stare} – arată modul în care un obiect își schimbă starea în funcție de evenimentele primite.
+  \item \textbf{Diagrame de componente și de implementare} – sunt folosite pentru a descrie structura fizică a aplicației și a mediului în care aceasta rulează.
+\end{itemize}
+
+Utilizarea UML contribuie la claritatea documentației, la o comunicare eficientă între membrii echipei și la o mai bună înțelegere a cerințelor și a soluțiilor propuse. Este un limbaj agnostic față de tehnologie, ceea ce îl face aplicabil într-o varietate de proiecte software, de la aplicații embedded până la sisteme distribuite mari.
+
+
+\subsection*{Relations with other subfields}
+Ingineria software este strâns legată de alte ramuri ale informaticii. De exemplu:
+\begin{itemize}
+  \item \textbf{Programare}: Fundamentele dezvoltării software se bazează pe concepte de programare, limbaje și paradigme.
+  \item \textbf{Sisteme distribuite}: Necesită practici avansate de inginerie software pentru a gestiona complexitatea și scalabilitatea.
+  \item \textbf{Inteligență artificială}: Ingineria software este esențială în integrarea sistemelor AI în aplicații reale.
+  \item \textbf{Interacțiune om-calculator (HCI)}: Designul centrat pe utilizator este crucial pentru succesul software-ului modern.
+\end{itemize}
+
+\subsection*{Major problems}
+Printre principalele provocări din ingineria software se numără:
+\begin{itemize}
+  \item \textbf{Gestionarea complexității}: Sistemele mari devin greu de înțeles și întreținut.
+  \item \textbf{Calitatea software-ului}: Asigurarea fiabilității, securității și performanței într-un mediu competitiv.
+  \item \textbf{Evoluția cerințelor}: Cerințele utilizatorilor și ale pieței se schimbă rapid.
+  \item \textbf{Estimarea costurilor și a duratei de dezvoltare}: Un aspect notoriu de imprevizibil.
+\end{itemize}
+
+\subsection*{Influential figures}
+Câțiva dintre cei mai importanți pionieri ai domeniului sunt:
+\begin{itemize}
+  \item \textbf{Margaret Hamilton} – A coordonat dezvoltarea software-ului pentru misiunea Apollo; a popularizat termenul „software engineering”.
+  \item \textbf{Barry Boehm} – Autorul modelului Spiral și promotor al conceptului de cost-benefit în dezvoltarea software.
+  \item \textbf{Fred Brooks} – Autorul lucrării clasice \emph{The Mythical Man-Month}, care evidențiază dificultățile scalării echipelor software.
+  \item \textbf{Grady Booch} – Unul dintre creatorii UML și promotor al metodologiilor orientate pe obiect.
+\end{itemize}
+
+\subsection*{Key forums}
+Comunitatea de inginerie software are mai multe forumuri esențiale pentru schimbul de cunoștințe:
+\begin{itemize}
+  \item \textbf{Conferințe}: ICSE (International Conference on Software Engineering), FSE (Foundations of Software Engineering), ASE (Automated Software Engineering).
+  \item \textbf{Jurnale}: IEEE Transactions on Software Engineering, Empirical Software Engineering, Journal of Systems and Software.
+  \item \textbf{Comunități online}: Stack Overflow, GitHub, Reddit (subreddits precum \texttt{r/softwareengineering}).
+\end{itemize}
+
+
+\newpage
+\section{Databases and Information Retrieval}
+
+\subsection*{Theory}
+Baze de date și regăsirea informației sunt două domenii esențiale în gestionarea și accesarea eficientă a volumelor mari de date. Teoria bazelor de date implică modele conceptuale precum modelul relațional, algebra relațională, teoria normalizării și limbajele de interogare precum SQL. În paralel, regăsirea informației se concentrează pe metode de căutare, clasificare și organizare a datelor nestructurate, în special text.
+
+\subsection*{Experiment}
+Experimentarea presupune testarea performanței și acurateței interogărilor și a sistemelor de regăsire:
+\begin{itemize}
+    \item Evaluarea performanței sistemelor de baze de date prin benchmark-uri (ex: TPC).
+    \item Măsurarea preciziei și acoperirii în regăsirea informației (precision, recall, F1-score).
+    \item Implementarea de motoare de căutare și testarea acestora pe colecții mari de documente.
+    \item Simularea scenariilor reale cu mulți utilizatori și date în continuă schimbare.
+\end{itemize}
+
+\subsection*{Design}
+Proiectarea sistemelor de baze de date și regăsire a informației presupune alegeri fundamentale legate de structură, indexare și interfețe de interogare.
+\begin{itemize}
+    \item Alegerea modelului de date (relațional, document, graf etc.).
+    \item Crearea de indici (B-trees, hashing, full-text) pentru eficiență.
+    \item Definirea schemelor și a relațiilor între tabele sau colecții.
+    \item Optimizarea interogărilor pentru scalabilitate și timp de răspuns.
+\end{itemize}
+
+\subsection*{Relations with other subfields}
+Acest domeniu are legături strânse cu alte ramuri ale informaticii:
+\begin{itemize}
+    \item Știința datelor — extragerea și analizarea datelor din baze complexe.
+    \item Inteligența artificială — clasificarea și căutarea inteligentă a informației.
+    \item Web semantica — organizarea și legarea datelor într-un mod inteligibil pentru sisteme automate.
+    \item Securitatea informatică — protejarea accesului la date și confidențialitatea informațiilor.
+\end{itemize}
+
+\subsection*{Major problems}
+Provocările actuale din domeniu includ:
+\begin{itemize}
+    \item Gestionarea datelor distribuite și a sistemelor NoSQL.
+    \item Regăsirea relevantă a informației în contexte ambigue sau multilingve.
+    \item Optimizarea interogărilor în medii mari (ex: Big Data).
+    \item Găsirea echilibrului între viteză, cost și consistență (CAP theorem).
+\end{itemize}
+
+\subsection*{Influencial figures}
+Mai multe personalități au contribuit la dezvoltarea bazelor de date și regăsirii informației:
+\begin{itemize}
+    \item \textbf{Edgar F. Codd} — creatorul modelului relațional, fundamentul bazelor de date moderne.
+    \item \textbf{Serge Abiteboul} — cunoscut pentru lucrările în baze de date semi-structurate și XML.
+    \item \textbf{Gerard Salton} — pionier în regăsirea informației, autor al modelului vectorial.
+\end{itemize}
+
+\subsection*{Key forums}
+Comunitatea activă din acest domeniu participă la numeroase conferințe și platforme:
+\begin{itemize}
+    \item \textit{SIGMOD (Special Interest Group on Management of Data)}
+    \item \textit{VLDB (Very Large Data Bases)}
+    \item \textit{ICDE (International Conference on Data Engineering)}
+    \item \textit{ECIR (European Conference on Information Retrieval)}
+    \item Platforme online: DBLP, Stack Overflow, arXiv, GitHub
+\end{itemize}
+
+
+\newpage
+\section{Artificial Intelligence and Robotics}
+
+\subsection*{Theory}
+Inteligența artificială și robotica sunt domenii complementare care își propun să creeze sisteme capabile să simuleze comportamentul inteligent și să interacționeze fizic cu mediul. Teoria AI implică învățarea automată, logica, planificarea, reprezentarea cunoștințelor și procesarea limbajului natural. În robotica teoretică, se studiază controlul mișcării, percepția mediului, localizarea și navigația autonomă.
+
+\subsection*{Experiment}
+Experimentele în AI și robotică sunt esențiale pentru validarea algoritmilor în contexte reale sau simulate.
+\begin{itemize}
+    \item Testarea algoritmilor de învățare automată pe seturi de date diverse.
+    \item Implementarea roboților mobili și evaluarea performanței lor în medii complexe.
+    \item Utilizarea simulatoarelor precum Gazebo sau Webots pentru antrenarea agenților.
+    \item Observarea interacțiunii dintre roboți și oameni în scenarii sociale sau industriale.
+\end{itemize}
+
+\subsection*{Design}
+Proiectarea sistemelor AI și a roboților implică multiple straturi: software, hardware și interacțiune.
+\begin{itemize}
+    \item Alegerea arhitecturii rețelelor neuronale pentru sarcini specifice.
+    \item Conceperea corpului robotic în funcție de scop (ex: manipulare, explorare, asistență).
+    \item Integrarea senzorilor (camera, LIDAR, IMU) pentru percepția mediului.
+    \item Asigurarea robusteței și siguranței în funcționare autonomă.
+\end{itemize}
+
+\subsection*{Relations with other subfields}
+Domeniul este extrem de interdisciplinar și se intersectează cu:
+\begin{itemize}
+    \item Informatică teoretică — pentru algoritmii fundamentali.
+    \item Bioinformatică — în recunoașterea modelelor biologice.
+    \item Psihologie și neuroștiințe — pentru modelarea comportamentului uman.
+    \item Etică și filosofie — pentru implicațiile deciziilor autonome.
+    \item Internet of Things — în integrarea roboților în medii conectate.
+\end{itemize}
+
+\subsection*{Major problems}
+Domeniul se confruntă cu numeroase provocări atât tehnice, cât și etice:
+\begin{itemize}
+    \item Lipsa de transparență a sistemelor de tip „black box” în AI.
+    \item Transferul învățării din simulare în lumea reală („sim2real gap”).
+    \item Probleme de siguranță și control al deciziilor autonome.
+    \item Reglementarea legală și socială a utilizării roboților și AI-ului.
+\end{itemize}
+
+\subsection*{Influencial figures}
+Câteva personalități marcante au influențat profund AI-ul și robotica:
+\begin{itemize}
+    \item \textbf{Alan Turing} — pionier al conceptului de inteligență artificială.
+    \item \textbf{Marvin Minsky} — cofondator al MIT AI Lab, promotor al AI simbolic.
+    \item \textbf{Yoshua Bengio}, \textbf{Geoffrey Hinton} și \textbf{Yann LeCun} — figuri centrale în dezvoltarea învățării profunde.
+    \item \textbf{Rodney Brooks} — fondator al iRobot, inovator în robotica reactivă.
+\end{itemize}
+
+\subsection*{Key forums}
+Comunitatea AI și robotică este activă în numeroase conferințe și platforme:
+\begin{itemize}
+    \item \textit{NeurIPS (Neural Information Processing Systems)}
+    \item \textit{ICRA (International Conference on Robotics and Automation)}
+    \item \textit{AAAI (Association for the Advancement of Artificial Intelligence)}
+    \item \textit{IJCAI (International Joint Conference on Artificial Intelligence)}
+    \item Platforme online: arXiv AI, GitHub, Hugging Face, OpenAI Forum
+\end{itemize}
+
+
+\newpage
+\section{Graphics}
+\subsection*{Theory}
+
+\subsection*{Experiment}
+
+\subsection*{Design}
+
+\subsection*{Relations with other subfields}
+
+\subsection*{Major problems}
+
+\subsection*{Influencial figures}
+
+\subsection*{Key forums}
+
+\newpage
+
+\section{Human Computer Interaction}
+
+\subsection*{Theory}
+Human Computer Interaction (HCI) este domeniul care studiază modul în care oamenii interacționează cu sistemele informatice. Teoretic, se bazează pe principii din psihologie cognitivă, ergonomie, sociologie și informatică, pentru a înțelege cum pot fi concepute interfețele astfel încât să fie eficiente, accesibile și ușor de utilizat. Se abordează concepte precum modelul utilizatorului, încărcarea cognitivă, feedback-ul sistemului și affordance-urile.
+
+\subsection*{Experiment}
+Experimentarea în HCI se face adesea prin studii empirice cu utilizatori:
+\begin{itemize}
+    \item Teste de utilizabilitate (usability testing) pentru evaluarea interfețelor.
+    \item Studii de eye-tracking pentru a observa focalizarea atenției.
+    \item Experimente A/B pentru a compara două variante ale unei interfețe.
+    \item Chestionare, interviuri și studii observaționale în context real de utilizare.
+\end{itemize}
+
+\subsection*{Design}
+Proiectarea în HCI urmărește construirea unor interfețe intuitive, incluzive și eficiente.
+\begin{itemize}
+    \item Aplicarea principiilor de design centrat pe utilizator.
+    \item Utilizarea prototipurilor interactive pentru testare timpurie.
+    \item Asigurarea accesibilității pentru persoane cu dizabilități.
+    \item Respectarea consistenței și a feedback-ului vizual imediat.
+\end{itemize}
+
+\subsection*{Relations with other subfields}
+HCI este un domeniu profund interdisciplinar și se intersectează cu:
+\begin{itemize}
+    \item Psihologie cognitivă — pentru înțelegerea modului în care utilizatorii percep și procesează informația.
+    \item Inteligență artificială — în special în interacțiunea naturală cu agenți conversaționali sau roboți.
+    \item Realitate virtuală și augmentată — pentru noi tipuri de interfețe.
+    \item Design grafic și arte vizuale — pentru componenta estetică și vizuală a interfețelor.
+\end{itemize}
+
+\subsection*{Major problems}
+HCI se confruntă cu numeroase provocări legate de diversitatea utilizatorilor și a contextelor de utilizare:
+\begin{itemize}
+    \item Găsirea echilibrului între funcționalitate și simplitate.
+    \item Adaptarea interfețelor la dispozitive diferite (mobile, desktop, VR).
+    \item Incluziunea și accesibilitatea pentru utilizatori cu nevoi speciale.
+    \item Evaluarea calitativă și cantitativă a experienței utilizatorului.
+\end{itemize}
+
+\subsection*{Influencial figures}
+Mai multe personalități au avut un impact major în dezvoltarea HCI:
+\begin{itemize}
+    \item \textbf{Don Norman} — autor al lucrării „The Design of Everyday Things”, a promovat designul centrat pe utilizator.
+    \item \textbf{Ben Shneiderman} — cunoscut pentru principiile „Eight Golden Rules” ale designului interfețelor.
+    \item \textbf{Stuart Card} — cercetător în modelarea interacțiunii om-calculator.
+    \item \textbf{Terry Winograd} — mentorul lui Larry Page, a influențat domeniul interacțiunii lingvistice cu computerele.
+\end{itemize}
+
+\subsection*{Key forums}
+Comunitatea HCI este foarte activă, atât în mediul academic, cât și în industrie:
+\begin{itemize}
+    \item \textit{CHI (Conference on Human Factors in Computing Systems)} — cea mai importantă conferință din domeniu.
+    \item \textit{UIST (User Interface Software and Technology)}
+    \item \textit{INTERACT} — conferință internațională în HCI.
+    \item Platforme online: ACM SIGCHI, UX StackExchange, Nielsen Norman Group, GitHub
+\end{itemize}
+
+
+\newpage
+\section{Computational Science}
+
+\subsection*{Theory}
+Știința computațională este un domeniu interdisciplinar care utilizează modele matematice, simulări numerice și algoritmi computaționali pentru a rezolva probleme complexe din știință și inginerie. Teoria acestui domeniu implică înțelegerea comportamentului sistemelor fizice prin formule matematice și transpunerea acestora în modele care pot fi simulate pe calculator. Este un domeniu ce necesită atât cunoștințe de matematică aplicată, cât și de informatică teoretică.
+
+\subsection*{Experiment}
+Experimentarea în știința computațională nu presupune doar programare, ci și validarea modelelor prin comparație cu date experimentale reale.
+\begin{itemize}
+    \item Se simulează fenomene fizice (fluidodinamică, reacții chimice, mișcări planetare) pentru a testa ipoteze.
+    \item Se compară rezultatele simulărilor cu măsurători experimentale pentru validare.
+    \item Se folosesc supercomputere sau rețele distribuite pentru a efectua experimente la scară mare.
+\end{itemize}
+
+\subsection*{Design}
+Procesul de proiectare în știința computațională implică definirea modelelor matematice și alegerea metodelor numerice adecvate pentru simulare.
+\begin{itemize}
+    \item Se aleg ecuații diferențiale, modele stocastice sau discrete, în funcție de domeniu.
+    \item Se implementează metode numerice precum metoda elementelor finite, diferențe finite sau Monte Carlo.
+    \item Se optimizează codul pentru a rula eficient pe sisteme paralele sau pe GPU.
+\end{itemize}
+
+\subsection*{Relations with other subfields}
+Știința computațională este strâns legată de mai multe alte domenii:
+\begin{itemize}
+    \item Fizică și chimie computațională — simulări moleculare, dinamica fluidelor.
+    \item Biologie — modelarea proceselor celulare sau a rețelelor neuronale.
+    \item Inginerie — analiza structurilor, aerodinamică, optimizarea proceselor.
+    \item Știința datelor — integrarea simulărilor cu date mari și algoritmi de învățare automată.
+\end{itemize}
+
+\subsection*{Major problems}
+Domeniul se confruntă cu numeroase provocări:
+\begin{itemize}
+    \item Scalabilitatea simulărilor pentru sisteme de dimensiuni foarte mari.
+    \item Erori numerice și stabilitatea algoritmilor în modele complexe.
+    \item Integrarea modelelor multi-scara (spațială și temporală).
+    \item Costurile computaționale ridicate pentru simulări de precizie.
+\end{itemize}
+
+\subsection*{Influencial figures}
+Mai multe personalități au contribuit semnificativ la dezvoltarea acestui domeniu:
+\begin{itemize}
+    \item \textbf{John von Neumann} — pionier în simulări numerice și arhitectura computațională.
+    \item \textbf{Stanley Osher} — cunoscut pentru metode numerice avansate în ecuații diferențiale parțiale.
+    \item \textbf{David Keyes} — implicat în metode de rezolvare a problemelor mari pe supercomputere.
+\end{itemize}
+
+\subsection*{Key forums}
+Comunitatea științei computaționale este activă în cadrul mai multor conferințe și platforme:
+\begin{itemize}
+    \item \textit{SC (International Conference for High Performance Computing, Networking, Storage, and Analysis)}
+    \item \textit{SIAM Conference on Computational Science and Engineering (CSE)}
+    \item \textit{International Conference on Computational Science (ICCS)}
+    \item Platforme online: arXiv, ResearchGate, GitHub
+\end{itemize}
+
+
+\newpage
+\section{Organizational Informatics}
+
+\subsection*{Theory}
+Informatica organizațională studiază modul în care sistemele informatice sunt proiectate, implementate și utilizate în cadrul organizațiilor pentru a sprijini procesele de afaceri, luarea deciziilor și colaborarea. Teoria acestui domeniu implică înțelegerea interacțiunii dintre tehnologie, structura organizațională și cultura instituțională. Sunt folosite concepte din sociologie, științe ale informației și management.
+
+\subsection*{Experiment}
+Experimentarea în informatica organizațională presupune atât studii de caz, cât și teste aplicate în organizații reale sau simulate.
+\begin{itemize}
+    \item Evaluarea modului în care angajații utilizează un nou sistem informatic.
+    \item Analiza impactului introducerii unui ERP asupra fluxului de lucru.
+    \item Observarea schimbărilor în comunicare și eficiență odată cu adoptarea tehnologiilor colaborative.
+    \item Realizarea de interviuri și chestionare pentru a evalua satisfacția utilizatorilor.
+\end{itemize}
+
+\subsection*{Design}
+Proiectarea în acest domeniu vizează sisteme informatice adaptate la nevoile și structura organizațională.
+\begin{itemize}
+    \item Identificarea cerințelor reale ale utilizatorilor finali.
+    \item Crearea de interfețe intuitive și integrate cu fluxurile de muncă.
+    \item Alegerea arhitecturii sistemului potrivit (centralizat, distribuit, cloud).
+    \item Integrarea cu sistemele existente (CRM, ERP, BI).
+\end{itemize}
+
+\subsection*{Relations with other subfields}
+Informatica organizațională are multiple conexiuni interdisciplinare:
+\begin{itemize}
+    \item Informatica economică — pentru suportul decizional și analiza performanței.
+    \item Ingineria software — pentru dezvoltarea sistemelor specifice.
+    \item Științele comportamentale — pentru înțelegerea interacțiunii om-tehnologie.
+    \item Managementul cunoștințelor — pentru valorificarea informațiilor în cadrul organizației.
+\end{itemize}
+
+\subsection*{Major problems}
+Printre problemele majore ale domeniului se numără:
+\begin{itemize}
+    \item Rezistența la schimbare din partea angajaților.
+    \item Lipsa de interoperabilitate între sisteme informatice diferite.
+    \item Colectarea și utilizarea etică a datelor organizaționale.
+    \item Subestimarea complexității proceselor organizaționale în faza de proiectare.
+\end{itemize}
+
+\subsection*{Influencial figures}
+Fiind un domeniu interdisciplinar, influențele vin din mai multe direcții:
+\begin{itemize}
+    \item \textbf{Claudio Ciborra} — cunoscut pentru contribuțiile sale privind sistemele informaționale în organizații și gândirea critică asupra tehnologiei.
+    \item \textbf{Shoshana Zuboff} — autoare a lucrării „In the Age of the Smart Machine”, pionier în analiza impactului tehnologic asupra muncii.
+    \item \textbf{Wanda Orlikowski} — cercetătoare în domeniul interacțiunii dintre tehnologie și structura organizațională.
+\end{itemize}
+
+\subsection*{Key forums}
+Comunitatea academică și practică se întâlnește în cadrul unor conferințe și reviste importante:
+\begin{itemize}
+    \item \textit{ICIS (International Conference on Information Systems)}
+    \item \textit{ECIS (European Conference on Information Systems)}
+    \item \textit{Journal of Information Technology}
+    \item \textit{Information Systems Journal}
+    \item Forumuri online: ResearchGate, AIS eLibrary, arXiv
+\end{itemize}
+
+
+\newpage
+
+\section{Bioinformatics}
+
+\subsection*{Theory}
+Bioinformatica este un domeniu interdisciplinar care combină biologia, informatica și matematica pentru a analiza și interpreta date biologice complexe, în special cele provenite din genomica și proteomica. Teoretic, domeniul se bazează pe modelarea secvențelor ADN, ARN și proteine, alinierea secvențelor, teoria grafurilor (pentru asamblarea genomului), dar și pe statistici și probabilități aplicate proceselor biologice.
+
+\subsection*{Experiment}
+Experimentarea în bioinformatică implică utilizarea de baze de date biologice, algoritmi și simulări pentru a înțelege fenomenele moleculare.
+\begin{itemize}
+    \item Se testează algoritmi pentru alinierea secvențelor (ex: BLAST).
+    \item Se simulează mutații genetice și se analizează impactul acestora.
+    \item Se construiesc arbori filogenetici pentru a studia evoluția speciilor.
+    \item Se analizează expresia genică prin date de tip RNA-Seq sau microarray.
+\end{itemize}
+
+\subsection*{Design}
+Proiectarea soluțiilor bioinformatice necesită o abordare atentă asupra volumului mare de date și a specificului biologic.
+\begin{itemize}
+    \item Alegerea formatelor de date standardizate (FASTA, FASTQ, GFF).
+    \item Dezvoltarea de algoritmi eficienți pentru asamblarea genomurilor.
+    \item Implementarea unor interfețe de vizualizare a datelor biologice (ex: genome browsers).
+    \item Utilizarea bazelor de date biologice distribuite pentru procesare paralelă.
+\end{itemize}
+
+\subsection*{Relations with other subfields}
+Bioinformatica are intersecții semnificative cu multe alte domenii:
+\begin{itemize}
+    \item Biologie moleculară — pentru înțelegerea expresiei genice și mutațiilor.
+    \item Inteligență artificială — clasificarea proteinelor și predicții genetice.
+    \item Știința datelor — analizarea volumelor masive de date genomice.
+    \item Securitatea informatică — protejarea datelor genetice sensibile.
+\end{itemize}
+
+\subsection*{Major problems}
+Bioinformatica se confruntă cu o serie de provocări majore:
+\begin{itemize}
+    \item Asamblarea precisă a genomurilor lungi și complexe.
+    \item Anotarea automată a genelor cu acuratețe ridicată.
+    \item Integrarea datelor omice multiple (genomic, proteomic, transcriptomic).
+    \item Necesitatea unor infrastructuri de calcul puternice și scalabile.
+\end{itemize}
+
+\subsection*{Influencial figures}
+Mai multe personalități marcante au pus bazele și au influențat dezvoltarea bioinformaticii:
+\begin{itemize}
+    \item \textbf{David Lipman} — fost director al NCBI, a contribuit la dezvoltarea BLAST și GenBank.
+    \item \textbf{Ewan Birney} — co-fondator al proiectului Ensembl și membru al echipei Human Genome Project.
+    \item \textbf{Leroy Hood} — pionier în biologia sistemică și instrumentație biologică.
+\end{itemize}
+
+\subsection*{Key forums}
+Bioinformatica are o comunitate largă și activă, cu numeroase conferințe și platforme:
+\begin{itemize}
+    \item \textit{ISMB (Intelligent Systems for Molecular Biology)}
+    \item \textit{RECOMB (Research in Computational Molecular Biology)}
+    \item \textit{ECCB (European Conference on Computational Biology)}
+    \item Platforme online: NCBI, EMBL-EBI, GitHub, Biostars, arXiv
+\end{itemize}
+
+
+\newpage
+\end{document}
