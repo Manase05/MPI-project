@@ -1193,61 +1193,61 @@ Activitățile de proiectare în HCI se concentrează pe:
 \subsection*{Key forums}
 
 \newpage
-\section{Organizational Informatics}
+\section{Informatica organizațională}
 
 \subsection*{Theory}
-Organizational Informatics (OI) looks at how information systems help people do their jobs and make decisions inside a company.  It treats an organisation as a network of tasks, rules, and data that must stay in sync.  Key ideas are business rules (who can approve what), workflows (how work moves from A to B), and feedback (using data to improve the process).  Effective OI shows clearly where software supports everyday work and where it gets in the way.  In short, it is about matching technology with day-to-day reality so the whole system runs smoothly.
+Informatica organizațională (IO) analizează modul în care sistemele informatice îi ajută pe oameni să-și facă munca și să ia decizii în cadrul unei companii. Organizația este văzută ca o rețea de sarcini, reguli și date care trebuie să rămână sincronizate. Ideile-cheie sunt regulile de business (cine poate aproba ce), fluxurile de lucru (cum se deplasează munca de la A la B) și feedback-ul (folosirea datelor pentru a îmbunătăți procesul). O IO eficientă arată clar unde software-ul sprijină activitățile zilnice și unde le încurcă. Pe scurt, totul ține de potrivirea tehnologiei cu realitatea de zi cu zi astfel încât întregul sistem să funcționeze fără probleme.
 
 \subsection*{Experiment}
-Researchers test OI ideas by watching real companies before and after they install new software.  They collect numbers such as task time, error counts, and user satisfaction, and also run interviews to catch things numbers miss.  Field studies compare different teams or branches to see what practices work well.  A common theme is checking whether promised savings or faster work actually show up. Since every company works differently, researchers look at several organizations to see if their findings still make sense elsewhere.
+Cercetătorii testează ideile IO observând companii reale înainte și după instalarea unui nou software. Ei colectează valori precum durata sarcinilor, numărul de erori și satisfacția utilizatorilor și realizează interviuri pentru a surprinde ceea ce cifrele pot rata. Studiile de teren compară echipe sau filiale diferite pentru a vedea ce practici dau rezultate bune. Tema recurentă este verificarea dacă economiile promise sau munca mai rapidă chiar se confirmă. Deoarece fiecare companie funcționează diferit, cercetătorii examinează mai multe organizații pentru a vedea dacă concluziile rămân valabile și în alte contexte.
 
 \subsection*{Design}
-Design work in OI starts by mapping the current workflow with a Kanban board—a visual board where tasks move through columns like “To Do”, “In Progress”, and “Done”—or by jotting down a quick list of steps.  The team then asks where software helps and where it slows people down.  They streamline clunky steps, add clear checkpoints, and build quick prototypes so users can test ideas early.  They favor building the system as small, independent pieces that send messages to each other, so changing one piece doesn’t break the rest.  The goal is smoother teamwork and clearer, faster decisions, not automation for its own sake.
+Procesul de design în IO începe prin cartografierea fluxului curent de lucru cu un board Kanban—o tablă vizuală unde sarcinile trec prin coloane precum „De făcut”, „În lucru” și „Gata”—sau prin notarea rapidă a pașilor. Echipa întreabă apoi unde ajută software-ul și unde încetinește oamenii. Se simplifică pașii greoi, se adaugă puncte de control clare și se construiesc prototipuri rapide pentru a testa ideile devreme. Se preferă construirea sistemului din piese mici, independente, care își trimit mesaje reciproc, astfel încât schimbarea unei piese să nu afecteze restul. Scopul este colaborare mai lină și decizii mai clare și mai rapide, nu automatizare de dragul automatizării.
 
 \subsection*{Relations with other subfields}
-OI borrows from Databases for reliable storage and tracking, and from Software Engineering to turn business rules into code.  It uses AI for dashboards that predict trends and flag risks.  Concepts from Human–Computer Interaction help make enterprise apps usable, while Networking enables remote teams to share the same workflow.  Thus OI sits at the crossroads of tech and management.
+IO împrumută din Baze de date pentru stocare și trasabilitate fiabilă și din Ingineria software pentru a transforma regulile de business în cod. Folosește Inteligența Artificială pentru tablouri de bord ce prezic tendințe și semnalează riscuri. Conceptele din Interacțiunea om-calculator fac aplicațiile enterprise mai ușor de utilizat, iar Rețelistica permite echipelor la distanță să partajeze același flux de lucru. Astfel, IO se află la intersecția dintre tehnologie și management.
 
 \subsection*{Major problems}
 \begin{itemize}
-  \item \textbf{Old systems linger} – legacy software is costly and risky to replace.
-  \item \textbf{Isolated data} – teams can’t access each other’s information, so reports are incomplete.
-  \item \textbf{Change resistance} – staff often prefer familiar routines to new digital workflows.
-  \item \textbf{Tougher privacy rules} – laws like GDPR raise the bar on storing and sharing data.
-  \item \textbf{Device explosion} – IoT and mobile apps make consistency and security harder.
-  \item \textbf{ROI is fuzzy} – it’s hard to measure the real payoff of collaboration platforms.
-  \item \textbf{Opaque algorithms} – firms must balance transparency with protecting trade secrets.
+  \item \textbf{Sisteme vechi persistă} – software-ul moștenit este costisitor și riscant de înlocuit.
+  \item \textbf{Date izolate} – echipele nu pot accesa informațiile celorlalți, iar rapoartele devin incomplete.
+  \item \textbf{Rezistență la schimbare} – angajații preferă adesea rutinele familiare în locul noilor fluxuri digitale.
+  \item \textbf{Reguli de confidențialitate mai stricte} – legi precum GDPR ridică ștacheta pentru stocarea și partajarea datelor.
+  \item \textbf{Explozia de dispozitive} – IoT și aplicațiile mobile fac consistența și securitatea mai dificile.
+  \item \textbf{ROI neclar} – beneficiul real al platformelor de colaborare este greu de măsurat.
+  \item \textbf{Algoritmi opaci} – firmele trebuie să combine transparența cu protejarea secretelor comerciale.
 \end{itemize}
 
 \subsection*{Influential figures}
 \begin{itemize}
-  \item \textbf{Peter J.\ Denning} – Highlighted the role of information practices within computer science and urged designers to align systems with organisational reality; his work laid the conceptual foundations of OI.
-  \item \textbf{Shoshana Zuboff} – Coined “informate” to describe how digital systems both automate work and create new data about that work, reshaping power and control inside firms.
-  \item \textbf{Thomas H.\ Davenport} – Popularised business-process re-engineering and analytics-driven management, providing managers with practical templates for data-centred decision-making.
-  \item \textbf{Jay R.\ Galbraith} – Developed the STAR model (strategy, structure, processes, rewards, people) that helps organisations match IT capabilities with corporate structure.
-  \item \textbf{Andrew McAfee} – Explores how enterprise social platforms, big data, and AI transform collaboration and productivity in large organisations (“Enterprise 2.0”).
+  \item \textbf{Peter J.\ Denning} – A subliniat rolul practicilor informaționale în informatică și a pledat pentru alinierea sistemelor la realitatea organizațională; munca sa a pus bazele conceptuale ale IO.
+  \item \textbf{Shoshana Zuboff} – A introdus termenul „informate” pentru a descrie cum sistemele digitale automatizează munca și creează date noi despre acea muncă, schimbând puterea și controlul în firme.
+  \item \textbf{Thomas H.\ Davenport} – A popularizat re-ingineria proceselor de business și managementul bazat pe analitice, oferind managerilor șabloane practice pentru decizii centrate pe date.
+  \item \textbf{Jay R.\ Galbraith} – A dezvoltat modelul STAR (strategie, structură, procese, recompense, oameni) care ajută la potrivirea capabilităților IT cu structura organizației.
+  \item \textbf{Andrew McAfee} – Studiază modul în care platformele sociale enterprise, big-data și AI transformă colaborarea și productivitatea în organizații mari („Enterprise 2.0”).
 \end{itemize}
 
 \subsection*{Key forums}
 \begin{itemize}
-  \item \textbf{Conferences}
+  \item \textbf{Conferințe}
     \begin{itemize}
       \item \textit{ICIS} – International Conference on Information Systems
       \item \textit{ECIS} – European Conference on Information Systems
       \item \textit{ACM SIGMIS‐CPR} – Computers and People Research symposium
     \end{itemize}
-  \item \textbf{Journals}
+  \item \textbf{Jurnale}
     \begin{itemize}
       \item \textit{MIS Quarterly (MISQ)}
       \item \textit{Journal of the Association for Information Systems (JAIS)}
     \end{itemize}
-  \item \textbf{Practitioner outlet}
+  \item \textbf{Publicații pentru practicieni}
     \begin{itemize}
-      \item \textit{Harvard Business Review} – management insights and case studies
+      \item \textit{Harvard Business Review} – articole cu studii de caz și perspective manageriale
     \end{itemize}
-  \item \textbf{Online communities}
+  \item \textbf{Comunități online}
     \begin{itemize}
-      \item AIS Discussion Board – academic Q\&A
-      \item Reddit \texttt{r/InformationSystems} – informal discussion and trend spotting
+      \item AIS Discussion Board – întrebări și răspunsuri academice
+      \item Reddit \texttt{r/InformationSystems} – discuții informale și tendințe emergente
     \end{itemize}
 \end{itemize}
 
