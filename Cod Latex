@@ -1,6 +1,6 @@
 \documentclass[12pt, letterpaper]{article}
 \title{The map of Computer Science}
-\author{Petcu George Iulian}
+\author{Petcu George Iulian & Haniș Manase Emanuel}
 \usepackage{tabularx}
 \usepackage{minted}
 \documentclass[12pt]{article}
