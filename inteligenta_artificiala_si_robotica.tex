@@ -1,0 +1,739 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage[romanian]{babel}
+
+\usepackage{amsmath, amssymb}
+
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+
+\usepackage{enumitem}
+
+\usepackage{geometry}
+
+\geometry{a4paper, margin=2.5cm}
+
+
+
+\title{Inteligența Artificială și Robotică}
+
+\author{}
+
+\date{}
+
+
+
+\begin{document}
+
+\maketitle
+
+
+
+Inteligenta artificiala si robotica
+
+Poziționare în cadrul științei calculatoarelor
+Inteligența Artificială (IA) și Robotica reprezintă ramura care se ocupă cu construirea de sisteme capabile să perceapă, să învețe, să ia decizii și să acționeze într-un mod care imită sau extinde inteligența umană. Această arie de studiu integrează algoritmi avansați, reprezentări ale cunoașterii, procesare a limbajului natural (NLP), învățare automată (machine learning – ML), învățare profundă (deep learning – DL), viziune computerizată (computer vision) și control robotic.
+
+Inteligența artificială (IA) și robotica sunt domenii separate, dar adesea interconectate.
+
+Inteligența artificială este un domeniu al informaticii care se ocupă cu crearea de sisteme capabile să simuleze comportamente inteligente (precum învățarea, raționamentul, recunoașterea de modele, luarea deciziilor etc.).
+
+Robotica este un domeniu interdisciplinar (care implică inginerie mecanică, electronică, automatică și informatică) axat pe proiectarea, construcția și controlul roboților.
+
+Care este relația dintre ele?
+
+Robotica poate folosi IA, dar nu este obligatoriu. Un robot poate funcționa pe bază de reguli simple (fără a fi „inteligent” în sensul IA).
+
+IA nu se limitează la robotică – este folosită în multe alte aplicații: recunoaștere vocală, traducere automată, diagnostic medical, algoritmi de recomandare etc.
+
+Inteligența Artificială este ramura informaticii care se ocupă cu dezvoltarea de sisteme capabile să simuleze sau să extindă inteligența umană. Aceste sisteme pot învăța din experiență, pot înțelege și genera limbaj, pot lua decizii și pot rezolva probleme într-un mod adaptativ.
+
+\subsection*{Scopul inteligenței artificiale (IA) este de a crea sisteme sau mașini capabile să imite, extindă sau îmbunătățească inteligența umană. În funcție de context, scopurile IA pot varia, dar în esență ele se pot rezuma la următoarele obiective principale}
+
+Automatizarea sarcinilor repetitive (ex: introducerea datelor, clasificarea imaginilor) sau complexe  (ex: analiza volumelor mari de date).
+
+Imitarea proceselor cognitive umane (ex: Raționamentul logic și luarea deciziilor, Recunoașterea vorbirii, a imaginilor și a limbajului natural, Învățarea din experiență (machine learning).
+
+Îmbunătățirea performanței umane ex: Luarea deciziilor (diagnostic medical asistat de IA), Creșterea eficienței în industrie, educație, finanțe etc., Suport personalizat (asistenți virtuali, sisteme de recomandare)
+
+Dezvoltarea unor sisteme autonome cum ar fi Navigare independent, Îndeplinirea sarcinilor fără intervenția umană.
+
+\subsection*{Subdomenii ale Inteligentei artificiale}
+
+Învățare automată (Machine Learning – ML)
+
+Algoritmi: regresie, SVM, arbori de decizie, rețele neuronale
+
+Aplicații: recunoaștere de tipare, predicție, clasificare
+
+Învățare profundă (Deep Learning – DL)
+
+Rețele neuronale adânci (CNN, RNN, Transformer)
+
+Aplicații: recunoaștere facială, procesarea limbajului, viziune computerizată
+
+Procesarea limbajului natural (NLP)
+
+LLMs (GPT-4.5, Claude, Gemini)
+
+Aplicații: chatboți, traducere automată, sumarizare, detectare de intenții
+
+Viziune artificială (Computer Vision)
+
+Detectarea și clasificarea obiectelor, segmentare de imagine
+
+Aplicații: auto-driving, diagnostic medical, recunoaștere de gesturi
+
+Sisteme de recomandare și decizie
+
+Analiză comportamentală, scoring, sisteme adaptive
+
+Aplicații: e-commerce, sănătate, educație
+
+Generative AI
+
+Modele capabile să genereze text, imagini, cod, sunet sau video
+
+Aplicații: design asistat de AI, creare de conținut, AI conversational
+
+\section{1. Învățare Automată (Machine Learning – ML)}
+
+\subsection*{Activități principale}
+
+Teorie: Dezvoltarea și analiza algoritmilor clasici (regresie, Support Vector Machine/SVM, arbori de decizie, rețele neuronale) și studiul fundamentelor învățării statistice.
+
+Experiment: Evaluarea performanței modelelor pe seturi de date diverse și optimizarea hiperparametrilor.
+
+Design: Crearea de algoritmi și metode eficiente, adaptate pentru aplicații practice.
+
+\subsection*{Relații cu alte subdomenii}
+
+Învățarea profundă (Deep Learning) este o ramură specializată a ML.
+
+NLP și Computer Vision utilizează algoritmi ML pentru recunoaștere, clasificare și predicție.
+
+Sisteme de recomandare folosesc ML pentru personalizare și scorare comportamentală.
+
+\subsection*{Probleme importante și deschise}
+
+Evitarea supraînvățării (overfitting) și subînvățării (underfitting).
+
+Interpretabilitatea modelelor complexe.
+
+Scalabilitatea algoritmilor pentru volume mari de date.
+
+Capacitatea de generalizare pe date neobservate.
+
+Exemplu: Evitarea supraînvățării atunci când modelele sunt complexe, iar datele de antrenament sunt limitate.
+
+\subsection*{Persoane importante}
+
+\section*{Tom Mitchell}
+
+\section*{Vladimir Vapnik}
+
+\section*{Leo Breiman}
+
+\subsection*{Foruri importante}
+
+Conferințe: NeurIPS, ICML, ICLR
+
+Reviste: Journal of Machine Learning Research (JMLR), Machine Learning Journal
+
+\section{2. Învățare Profundă (Deep Learning – DL)}
+
+\subsection*{Activități principale}
+
+Teorie: Studiul arhitecturilor rețelelor neuronale adânci (CNN, RNN, Transformer) și metodele de optimizare.
+
+Experiment: Antrenarea și testarea rețelelor pe seturi mari de date.
+
+Design: Crearea arhitecturilor noi și specializate pentru diferite tipuri de probleme.
+
+\subsection*{Relații cu alte subdomenii}
+
+Este o ramură avansată a ML.
+
+Bază pentru modelele NLP (ex. Transformer).
+
+Fundamentală pentru sistemele de Computer Vision.
+
+Stă la baza Generative AI.
+
+\subsection*{Probleme importante și deschise}
+
+Necesitatea unor volume foarte mari de date și putere de calcul.
+
+Lipsa interpretabilității.
+
+Probleme precum gradientul dispărut și supraantrenarea.
+
+Exemplu: Proiectarea de arhitecturi Transformer mai eficiente pentru procesarea secvențelor lungi.
+
+\subsection*{Persoane importante}
+
+\section*{Geoffrey Hinton}
+
+Yann LeCun
+
+\section*{Yoshua Bengio}
+
+\subsection*{Foruri importante}
+
+Conferințe: NeurIPS, ICML, ICLR, CVPR
+
+Reviste: IEEE Transactions on Neural Networks and Learning Systems
+
+\section{3. Procesarea Limbajului Natural (Natural Language Processing – NLP)}
+
+\subsection*{Activități principale}
+
+Teorie: Modelarea limbajului, analiza sintactică și semantică.
+
+Experiment: Antrenarea modelelor mari de limbaj (LLM) și testarea pe sarcini variate.
+
+Design: Dezvoltarea chatboților, sistemelor de traducere și detecție a intențiilor.
+
+\subsection*{Relații cu alte subdomenii}
+
+Bazat pe tehnici de Deep Learning.
+
+Interacționează strâns cu Generative AI.
+
+Folosește algoritmi ML pentru clasificare și recunoaștere.
+
+\subsection*{Probleme importante și deschise}
+
+Ambiguitatea și complexitatea limbajului natural.
+
+Gestionarea contextului extins.
+
+Bias-ul și aspectele etice în generarea textului.
+
+Exemplu: Reducerea fenomenului de „halucinații” (informații inventate) în răspunsurile LLM.
+
+\subsection*{Persoane importante}
+
+\section*{Christopher Manning}
+
+\section*{Dan Jurafsky}
+
+\section*{Yoshua Bengio}
+
+\subsection*{Foruri importante}
+
+Conferințe: ACL, EMNLP, NAACL
+
+Reviste: Computational Linguistics, Transactions of the ACL
+
+\section{4. Viziune Artificială (Computer Vision – CV)}
+
+\subsection*{Activități principale}
+
+Teorie: Modelarea procesării imaginilor și extragerea caracteristicilor.
+
+Experiment: Testarea rețelelor neuronale convoluționale (CNN), segmentare și detectare obiecte.
+
+Design: Sisteme pentru recunoaștere facială, diagnostic medical și conducere autonomă.
+
+\subsection*{Relații cu alte subdomenii}
+
+Deep Learning oferă arhitecturi esențiale pentru CV.
+
+ML furnizează metode pentru clasificare și recunoaștere.
+
+Generative AI este utilizată pentru generarea și augmentarea imaginilor.
+
+\subsection*{Probleme importante și deschise}
+
+Robustetea la variații de mediu (lumină, unghiuri).
+
+Recunoaștere în timp real și pe dispozitive cu resurse limitate.
+
+Rezistența la atacuri adversariale.
+
+Exemplu: Segmentarea corectă a obiectelor în imagini cu zgomot puternic.
+
+\subsection*{Persoane importante}
+
+\section*{Fei-Fei Li}
+
+\section*{Jitendra Malik}
+
+Yann LeCun
+
+\subsection*{Foruri importante}
+
+Conferințe: CVPR, ICCV, ECCV
+
+Reviste: IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)
+
+\section{5. Sisteme de Recomandare și Decizie}
+
+\subsection*{Activități principale}
+
+Teorie: Dezvoltarea modelelor de scoring, filtrare colaborativă și analize comportamentale.
+
+Experiment: Testarea și personalizarea sistemelor pe date reale.
+
+Design: Implementarea sistemelor adaptive pentru domenii precum e-commerce, sănătate și educație.
+
+\subsection*{Relații cu alte subdomenii}
+
+Utilizează algoritmi ML pentru predicție.
+
+Folosește NLP pentru analiza feedback-ului textual.
+
+Integrează Generative AI pentru conținut personalizat.
+
+\subsection*{Probleme importante și deschise}
+
+Sparse data (date rare și incomplete).
+
+Aspecte etice privind recomandările și crearea bulelor de filtrare.
+
+Scalabilitatea și latența sistemelor.
+
+Exemplu: Personalizarea recomandărilor menținând în același timp diversitatea conținutului.
+
+\subsection*{Persoane importante}
+
+\section*{Yehuda Koren}
+
+\section*{Joseph A. Konstan}
+
+\subsection*{Foruri importante}
+
+Conferințe: RecSys, KDD, WWW
+
+Reviste: ACM Transactions on Information Systems
+
+\section{6. Inteligența artificială generativă}
+
+\subsection*{Activități principale}
+
+Teorie: Studiul modelelor generative (GAN, VAE, modele autoregresive).
+
+Experiment: Antrenarea și evaluarea modelelor pe date text, imagini, sunet și video.
+
+Design: Sisteme pentru creație asistată de AI, conținut conversațional și design.
+
+\subsection*{Relații cu alte subdomenii}
+
+Bazat pe Deep Learning.
+
+Intersectează NLP și Computer Vision în generarea de conținut.
+
+Integrează sisteme decizionale pentru recomandări și personalizare.
+
+\subsection*{Probleme importante și deschise}
+
+Controlul și calitatea conținutului generat.
+
+Prevenirea generării de conținut ofensator sau fals.
+
+Optimizarea resurselor pentru antrenare și inferență.
+
+Exemplu: Evitarea generării de conținut ofensator în modele generative.
+
+\subsection*{Persoane importante}
+
+\section*{Ian Goodfellow}
+
+\section*{Alec Radford}
+
+\section*{Diederik P. Kingma}
+
+\subsection*{Foruri importante}
+
+Conferințe: NeurIPS, ICML, ICLR
+
+Reviste: IEEE Transactions on Neural Networks, Journal of Machine Learning Research
+
+\section*{Robotică}
+
+Robotica este un domeniu interdisciplinar care se ocupă cu proiectarea, construirea, programarea și utilizarea roboților — sisteme automate, capabile să perceapă mediul, să ia decizii și să execute acțiuni fizice în mod autonom sau semi-autonom.
+
+\subsection*{În cadrul informaticii, scopul roboticii este de a}
+
+Integra algoritmi de control, percepție și decizie într-un sistem fizic capabil să interacționeze cu lumea reală.
+
+\subsection*{Aplica metode din inteligența artificială, învățare automată și procesare de date pentru a crea roboți inteligenți care pot}
+
+\section*{Naviga,}
+
+Reacționa la stimuli,
+
+Învăța din experiență,
+
+Colabora cu oameni sau alți roboți.
+
+\section{1. Roboți Industriali}
+
+\subsection*{Activități principale}
+
+Teorie: Cinematica și dinamica brațelor robotice, controlul mișcării și optimizarea traiectoriilor.
+
+Experiment: Testarea preciziei și fiabilității în sarcini repetitive, evaluarea performanței în medii industriale.
+
+Design: Proiectarea de mecanisme robuste și eficiente pentru sarcini specifice, integrarea cu sisteme de automatizare.
+
+\subsection*{Relații cu alte subdomenii}
+
+Integrare cu viziunea artificială pentru inspecție și control de calitate.
+
+Utilizarea învățării automate pentru optimizarea proceselor și adaptarea la variații în producție.
+
+\subsection*{Probleme importante și deschise}
+
+Flexibilitatea în adaptarea la produse variate și schimbări rapide în linia de producție.
+
+Colaborarea sigură cu operatorii umani în spații comune.
+
+\subsection*{Persoane importante}
+
+Joseph Engelberger – considerat părintele roboticii industriale.
+
+Hiroshi Makino – cunoscut pentru contribuțiile la automatizarea industrială.
+
+\subsection*{Foruri importante}
+
+Conferințe: IEEE International Conference on Robotics and Automation (ICRA), International Symposium on Robotics (ISR).
+
+Reviste: IEEE Transactions on Industrial Electronics, Robotics and Computer-Integrated Manufacturing.
+
+\section{2. Roboți Mobili}
+
+\subsection*{Activități principale}
+
+Teorie: Algoritmi de planificare a traseului, localizare și cartografiere simultană (SLAM).
+
+Experiment: Testarea navigației autonome în medii necunoscute, evaluarea interacțiunii cu obstacole dinamice.
+
+Design: Dezvoltarea de platforme mobile adaptate pentru diverse terenuri și aplicații.
+
+\subsection*{Relații cu alte subdomenii}
+
+Utilizarea viziunii artificiale pentru percepția mediului.
+
+Integrarea cu învățarea automată pentru îmbunătățirea autonomiei și adaptabilității.
+
+\subsection*{Probleme importante și deschise}
+
+Navigația fiabilă în medii complexe și dinamice.
+
+Fuzionarea datelor din multiple senzori pentru o percepție coerentă.
+
+\subsection*{Persoane importante}
+
+Sebastian Thrun – pionier în domeniul vehiculelor autonome.
+
+Dieter Fox – cunoscut pentru cercetările în localizare și percepție robotică.
+
+\subsection*{Foruri importante}
+
+Conferințe: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Robotics: Science and Systems (RSS).
+
+Reviste: Autonomous Robots, Journal of Field Robotics.
+
+\section{3. Roboți Umanoizi}
+
+\subsection*{Activități principale}
+
+Teorie: Modelarea mișcărilor umane, echilibru și controlul posturii.
+
+Experiment: Testarea interacțiunii cu oamenii, evaluarea comportamentului în medii sociale.
+
+Design: Proiectarea de structuri antropomorfe și sisteme de acționare compatibile cu mișcările umane.
+
+\subsection*{Relații cu alte subdomenii}
+
+Integrarea procesării limbajului natural pentru comunicare.
+
+Utilizarea învățării automate pentru adaptarea comportamentului.
+
+\subsection*{Probleme importante și deschise}
+
+Stabilitatea în mers și echilibru pe terenuri variate.
+
+Interacțiunea naturală și empatică cu oamenii.
+
+\subsection*{Persoane importante}
+
+Rodney Brooks – cunoscut pentru proiectul Cog și teoria subsumării.
+
+Sangbae Kim – cercetător în domeniul mișcărilor dinamice ale roboților umanoizi.
+
+\subsection*{Foruri importante}
+
+Conferințe: IEEE-RAS International Conference on Humanoid Robots (Humanoids), International Conference on Robotics and Automation (ICRA).
+
+Reviste: IEEE Transactions on Robotics, Robotics and Autonomous Systems.
+
+\section{4. Roboți de Serviciu}
+
+\subsection*{Activități principale}
+
+Teorie: Planificarea sarcinilor, interacțiunea om-robot și navigația în medii domestice.
+
+Experiment: Testarea în scenarii reale, evaluarea acceptabilității de către utilizatori.
+
+Design: Crearea de interfețe intuitive și mecanisme sigure pentru utilizare în spații umane.
+
+\subsection*{Relații cu alte subdomenii}
+
+Aplicarea viziunii artificiale pentru recunoașterea obiectelor.
+
+Integrarea cu NLP pentru comunicare verbală.
+
+\subsection*{Probleme importante și deschise}
+
+Adaptarea la diverse medii și sarcini neprevăzute.
+
+Asigurarea siguranței și confortului utilizatorilor umani.
+
+\subsection*{Persoane importante}
+
+Shigeo Hirose – cunoscut pentru dezvoltarea de roboți pentru medii neconvenționale.
+
+Henrik Christensen – expert în robotică de serviciu și interacțiune om-robot.
+
+\subsection*{Foruri importante}
+
+Conferințe: International Conference on Human-Robot Interaction (HRI), IEEE International Conference on Robotics and Automation (ICRA).
+
+Reviste: Journal of Human-Robot Interaction, Robotics and Autonomous Systems.
+
+\section{5. Roboți Medicali}
+
+\subsection*{Activități principale}
+
+Teorie: Modelarea mișcărilor precise, controlul forței și interacțiunea cu țesuturile biologice.
+
+Experiment: Testarea în proceduri chirurgicale, evaluarea preciziei și siguranței.
+
+Design: Dezvoltarea de instrumente miniaturizate și sisteme de control ergonomic.
+
+\subsection*{Relații cu alte subdomenii}
+
+Integrarea cu imagistica medicală pentru ghidarea intervențiilor.
+
+Utilizarea învățării automate pentru asistență în diagnostic și planificare.
+
+\subsection*{Probleme importante și deschise}
+
+Asigurarea fiabilității și siguranței în medii critice.
+
+Adaptarea la variabilitatea anatomică a pacienților.
+
+\subsection*{Persoane importante}
+
+Frederic Moll – co-fondator al Intuitive Surgical și dezvoltator al sistemului da Vinci.
+
+Russell H. Taylor – pionier în chirurgia asistată robotic
+
+\subsection*{Foruri importante}
+
+Conferințe: Medical Image Computing and Computer-Assisted Intervention (MICCAI), IEEE International Conference on Robotics and Automation (ICRA).
+
+Reviste: International Journal of Medical Robotics and Computer Assisted Surgery, IEEE Transactions on Biomedical Engineering.
+
+\section{6. Roboți Subacvatici (ROV/AUV)}
+
+\subsection*{Activități principale}
+
+Teorie:
+Modelarea hidrodinamicii în medii subacvatice, controlul mișcării în 6 grade de libertate, localizare și navigație în lipsa GPS-ului.
+
+Experiment:
+Testarea manevrabilității și rezistenței în condiții reale subacvatice (mare adâncime, curenți, turbiditate).
+
+Design:
+Proiectarea de carcase etanșe, propulsie silențioasă, senzori pentru sonar, imagistică și comunicații acustice.
+
+\subsection*{Relații cu alte subdomenii}
+
+Se intersectează cu roboții mobili în ceea ce privește navigația autonomă.
+
+Colaborează cu robotică spațială pentru operare în medii izolate și ostile.
+
+Integrează tehnologii din viziune artificială și control autonom.
+
+\subsection*{Probleme importante și deschise}
+
+Navigație autonomă în medii fără repere externe și semnal GPS.
+
+Comunicarea eficientă sub apă (unde undele radio nu funcționează bine – se folosesc semnale acustice cu bandă limitată).
+
+Mentenanța dificilă și accesul restricționat pentru intervenții în caz de defecțiuni.
+
+\subsection*{Exemple de probleme deschise}
+
+Cum poate un AUV (Autonomous Underwater Vehicle) să exploreze peșteri sau epave necunoscute fără hartă prealabilă?
+
+Cum pot mai mulți roboți subacvatici colabora în misiuni complexe precum cartografierea fundului oceanic?
+
+\subsection*{Persoane importante}
+
+Stefan B. Williams – cercetător în robotică marină și cartografiere subacvatică.
+
+Hanumant Singh – expert în vehicule autonome subacvatice și imagistică marină.
+
+\subsection*{Foruri importante}
+
+Conferințe: IEEE OCEANS Conference, International Symposium on Unmanned Untethered Submersible Technology (UUST).
+
+Reviste: Journal of Field Robotics, IEEE Journal of Oceanic Engineering.
+
+\section{7. Roboți Spațiali}
+
+\subsection*{Activități principale}
+
+Teorie:
+Cinematica și dinamica în condiții de microgravitație, sisteme de control la distanță, autonomie în medii necunoscute.
+
+Experiment:
+Simularea condițiilor spațiale, testarea rezistenței la radiații și variații extreme de temperatură.
+
+Design:
+Proiectarea de structuri ușoare, fiabile și rezistente la condiții dure din spațiu.
+
+\subsection*{Relații cu alte subdomenii}
+
+Utilizarea roboților mobili pentru explorarea suprafețelor planetare.
+
+Integrarea viziunii computerizate și AI pentru navigație autonomă și analiză de teren.
+
+\subsection*{Probleme importante și deschise}
+
+Comunicarea întârziată între Pământ și robot, necesitând autonomie avansată.
+
+Supraviețuirea pe termen lung în condiții extreme (radiații, praf, lipsa atmosferei).
+
+\subsection*{Persoane importante}
+
+Rob Ambrose – NASA, coordonator în robotică spațială.
+
+Ayanna Howard – expertă în robotică planetară și AI.
+
+\subsection*{Foruri importante}
+
+Conferințe: International Symposium on Artificial Intelligence, Robotics and Automation in Space (i-SAIRAS), IEEE Aerospace Conference.
+
+Reviste: Journal of Field Robotics, Acta Astronautica.
+
+\section{8. Micro- și Nanorobotică}
+
+\subsection*{Activități principale}
+
+Teorie:
+Modelarea interacțiunilor fizice la scară mică, propulsie și control în medii fluide.
+
+Experiment:
+Testarea în microcanale, evaluarea funcționării în țesuturi sau la nivel celular.
+
+Design:
+Fabricarea de structuri bio-compatibile, metode inovatoare de alimentare și control.
+
+\subsection*{Relații cu alte subdomenii}
+
+Utilizare în robotică medicală pentru intervenții precise.
+
+Cooperare cu bioingineria și chimia pentru materialele utilizate.
+
+\subsection*{Probleme importante și deschise}
+
+Controlul precis al mișcării în medii biologice complexe.
+
+Comunicarea și coordonarea unui număr mare de nanoroboți (swarm robotics).
+
+\subsection*{Persoane importante}
+
+Bradley Nelson – cercetător în microrobotică biomedicală.
+
+Sylvain Martel – pionier în nanorobotică controlată magnetic.
+
+\subsection*{Foruri importante}
+
+Conferințe: IEEE International Conference on Manipulation, Automation and Robotics at Small Scales (MARSS), IEEE Nano.
+
+Reviste: IEEE Transactions on Nanobioscience, Small.
+
+\section{9. Robotică Colaborativă (Cobots)}
+
+\subsection*{Activități principale}
+
+Teorie:
+Modele de interacțiune om-robot, detecția intenției umane, sisteme de siguranță.
+
+Experiment:
+Testarea colaborării în sarcini partajate, analiza performanței și confortului utilizatorului.
+
+Design:
+Dezvoltarea de roboți siguri, intuitivi, ușor de programat și manevrat de oameni.
+
+\subsection*{Relații cu alte subdomenii}
+
+Integrarea NLP pentru comunicarea naturală.
+
+Legătură strânsă cu învățarea automată pentru adaptarea comportamentului robotului în timp real.
+
+\subsection*{Probleme importante și deschise}
+
+Asigurarea unui echilibru optim între siguranță și eficiență.
+
+Acceptabilitatea socială și încrederea utilizatorilor în colaborarea om-robot.
+
+\subsection*{Persoane importante}
+
+Sami Haddadin – cercetător renumit în robotică colaborativă și interacțiune fizică.
+
+Oussama Khatib – expert în robotică interactivă și control.
+
+\subsection*{Foruri importante}
+
+Conferințe: IEEE International Conference on Robotics and Automation (ICRA), International Symposium on Robot and Human Interactive Communication (RO-MAN).
+
+Reviste: IEEE Transactions on Human-Machine Systems, Human-Robot Interaction Journal.
+
+\section{10. Robotică Educațională}
+
+\subsection*{Activități principale}
+
+Teorie:
+Pedagogia învățării asistate de robotică, dezvoltarea gândirii computaționale.
+
+Experiment:
+Implementarea și evaluarea în școli și ateliere STEM.
+
+Design:
+Crearea de platforme prietenoase, sigure și motivante pentru copii și începători.
+
+\subsection*{Relații cu alte subdomenii}
+
+Folosește principii de programare, electronică și AI pentru învățare.
+
+Poate influența interesul pentru robotică industrială, mobilă sau medicală.
+
+\subsection*{Probleme importante și deschise}
+
+Accesibilitate în educație (costuri, resurse).
+
+Eficiența pe termen lung în dezvoltarea competențelor STEM.
+
+\subsection*{Persoane importante}
+
+Mitchel Resnick – creatorul mediului Scratch, colaborator în proiectele LEGO Mindstorms.
+
+Mark W. Tilden – inventatorul roboticii BEAM (biologică, electronică, estetică, mecanică).
+
+\subsection*{Foruri importante}
+
+Conferințe: International Conference on Robotics in Education (RiE), Fablearn.
+
+Reviste: International Journal of STEM Education, Journal of Robotics in Education.
+
+\end{document}
