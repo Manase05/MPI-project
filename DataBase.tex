@@ -1,0 +1,610 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[romanian]{babel}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\title{Bazele de Date și Recuperarea Informațiilor}
+\author{Borbiro Paul-Marian}
+
+\begin{document}
+
+\maketitle
+
+Bazele de date și recuperarea informațiilor
+
+\subsection*{Poziționare în cadrul științei calculatoarelor}
+Bazele de Date și Recuperarea Informațiilor reprezintă ramura informaticii care se ocupă cu organizarea, stocarea, managementul și căutarea eficientă a datelor și informațiilor. Această arie de studiu integrează algoritmi de indexare, structuri de date specializate, modele de date, sisteme de management al bazelor de date (DBMS), motoare de căutare, și tehnici de optimizare a interogărilor.
+
+Bazele de date și recuperarea informațiilor sunt domenii strâns legate, dar cu focus-uri diferite.
+
+Bazele de date se ocupă cu stocarea structurată și managementul eficient al datelor, asigurând consistența, durabilitatea și accesul rapid la informații prin interogări complexe.
+
+Recuperarea informațiilor se concentrează pe găsirea și extragerea informațiilor relevante din colecții mari de documente sau date nestructurate, folosind tehnici de indexare și algoritmi de ranking.
+
+Care este relația dintre ele?
+
+Bazele de date pot folosi tehnici de recuperare a informațiilor pentru căutări în text și analiza semantică.
+
+Recuperarea informațiilor nu se limitează la baze de date - este folosită în motoare de căutare web, sisteme de recomandare, biblioteci digitale etc.
+
+Bazele de Date sunt sisteme care permit stocarea, organizarea și manipularea eficientă a datelor structurate, asigurând integritatea, securitatea și accesul concurrent la informații.
+
+\subsection*{Scopul bazelor de date este de a oferi o soluție centralizată și eficientă pentru managementul datelor într-o organizație. Obiectivele principale includ:}
+
+Eliminarea redundanței datelor și asigurarea consistenței (ex: normalizarea bazei de date, controlul tranzacțiilor).
+
+Suportul pentru accesul concurrent și controlul accesului (ex: sisteme multiutilizator, autentificare și autorizare, backup și recovery).
+
+Optimizarea performanței pentru interogări complexe (ex: indexare inteligentă, optimizarea planurilor de execuție, cache-ing eficient).
+
+Asigurarea integrității și securității datelor (ex: constrainte de integritate, criptare, audit trails).
+
+\subsection*{Subdomenii ale Bazelor de Date}
+
+Sisteme de Management al Bazelor de Date (DBMS)
+
+Algoritmi: indexare (B-tree, hash), optimizarea interogărilor, controlul concurenței
+
+Aplicații: sisteme enterprise, aplicații web, data warehousing
+
+Baze de Date Distribuite și Cloud
+
+Sisteme distribuite (sharding, replicare), consistența eventuală
+
+Aplicații: sisteme la scară largă, microservicii, platforme cloud
+
+Baze de Date NoSQL
+
+Modele alternative (document, cheie-valoare, grafuri, coloane)
+
+Aplicații: big data, aplicații real-time, rețele sociale
+
+Data Warehousing și Business Intelligence
+
+Modele dimensionale (star schema, snowflake), OLAP
+
+Aplicații: raportare, analiza tendințelor, suport decizional
+
+Procesarea Tranzacțiilor
+
+Proprietățile ACID, controlul concurenței, recuperarea după erori
+
+Aplicații: sisteme financiare, e-commerce, rezervări
+
+Baze de Date în Memorie
+
+Structuri optimizate pentru RAM, procesare în timp real
+
+Aplicații: trading financiar, gaming, IoT
+
+\section{Sisteme de Management al Bazelor de Date (DBMS)}
+
+\subsection*{Activități principale}
+
+Teorie: Dezvoltarea și analiza modelelor de date (relațional, ER, orientat pe obiecte), algebra relațională și calculul relațional, teoria normalizării.
+
+Experiment: Evaluarea performanței diferitelor DBMS-uri, testarea scalabilității și optimizarea interogărilor pe seturi mari de date.
+
+Design: Proiectarea schemelor de baze de date, implementarea sistemelor de indexare și dezvoltarea planificatorilor de interogări.
+
+\subsection*{Relații cu alte subdomenii}
+
+Bazele de date distribuite extind conceptele DBMS clasice pentru medii distribuite.
+
+Data warehousing folosește DBMS-uri specializate pentru analiza datelor.
+
+Procesarea tranzacțiilor este fundamentală în orice DBMS modern.
+
+\subsection*{Probleme importante și deschise}
+
+Optimizarea automată a interogărilor pentru workload-uri diverse.
+
+Gestionarea datelor heterogene și semi-structurate.
+
+Scalabilitatea pentru volume masive de date (petabytes).
+
+Integrarea cu tehnologiile de machine learning.
+
+Exemplu: Optimizarea join-urilor pentru tabele cu miliarde de înregistrări distribuite pe multiple servere.
+
+\subsection*{Persoane importante}
+
+Edgar F. Codd
+
+Michael Stonebraker
+
+Jim Gray
+
+\subsection*{Foruri importante}
+
+Conferințe: SIGMOD, VLDB, ICDE
+
+Reviste: ACM Transactions on Database Systems (TODS), VLDB Journal
+
+\section{Baze de Date Distribuite și Cloud}
+
+\subsection*{Activități principale}
+
+Teorie: Studiul algoritmilor de distribuție (sharding, partitioning), protocoale de consensus (Paxos, Raft), teorema CAP.
+
+Experiment: Testarea consistenței și disponibilității în scenarii de failure, evaluarea latențelor în medii geografic distribuite.
+
+Design: Dezvoltarea arhitecturilor multi-master, implementarea strategiilor de replicare și designul sistemelor fault-tolerant.
+
+\subsection*{Relații cu alte subdomenii}
+
+Bazat pe principiile DBMS clasice, dar adaptat pentru medii distribuite.
+
+Integrează concepte din rețele și sisteme distribuite.
+
+Colaborează cu cloud computing pentru scalabilitate elastică.
+
+\subsection*{Probleme importante și deschise}
+
+Menținerea consistenței în prezența partition-urilor de rețea.
+
+Optimizarea cost-performanță pentru storage cloud.
+
+Gestionarea datelor across multiple zone geografice.
+
+Exemplu: Implementarea consistenței eventually consistent într-un sistem global cu latențe de sute de milisecunde.
+
+\subsection*{Persoane importante}
+
+Eric Brewer
+
+Pat Helland
+
+Leslie Lamport
+
+\subsection*{Foruri importante}
+
+Conferințe: SIGMOD, VLDB, SOCC (Symposium on Cloud Computing)
+
+Reviste: Distributed and Parallel Databases, IEEE Transactions on Cloud Computing
+
+\section{Baze de Date NoSQL}
+
+\subsection*{Activități principale}
+
+Teorie: Modelarea datelor pentru documente, grafuri și perechi cheie-valoare, teorii de indexare pentru date semi-structurate.
+
+Experiment: Compararea performanțelor NoSQL vs. SQL pentru diverse tipuri de aplicații, testarea scalabilității orizontale.
+
+Design: Dezvoltarea schemelor flexibile, implementarea distributed hash tables și designul sistemelor multi-model.
+
+\subsection*{Relații cu alte subdomenii}
+
+Complementează bazele de date relaționale pentru anumite use case-uri.
+
+Integrare strânsă cu big data și analiza în timp real.
+
+Folosită extensiv în aplicații web moderne și microservicii.
+
+\subsection*{Probleme importante și deschise}
+
+Lipsa standardizării în limbajele de interogare.
+
+Compromisurile între flexibilitate și consistență.
+
+Migrarea de la sisteme relaționale la NoSQL.
+
+Exemplu: Modelarea relațiilor complexe într-o bază de date de grafuri pentru rețele sociale cu miliarde de utilizatori.
+
+\subsection*{Persoane importante}
+
+Werner Vogels
+
+Dwight Merriman
+
+Neo4j Team
+
+\subsection*{Foruri importante}
+
+Conferințe: NoSQL Now, SIGMOD, VLDB
+
+Reviste: NoSQL Databases Journal, ACM Transactions on Database Systems
+
+\section{Data Warehousing și Business Intelligence}
+
+\subsection*{Activități principale}
+
+Teorie: Modelarea dimensională (star schema, snowflake schema), procesarea analitică online (OLAP), măsuri și dimensiuni.
+
+Experiment: Implementarea ETL pipelines, testarea performanței pentru rapoarte complexe și optimizarea cube-urilor OLAP.
+
+Design: Proiectarea arhitecturilor data warehouse, dezvoltarea de dashboarduri interactive și implementarea sistemelor de raportare.
+
+\subsection*{Relații cu alte subdomenii}
+
+Folosește DBMS-uri specializate pentru analiza datelor.
+
+Integrează cu big data pentru procesarea volumelor mari.
+
+Colaborează cu BI tools pentru vizualizarea datelor.
+
+\subsection*{Probleme importante și deschise}
+
+Procesarea în timp real a datelor pentru live dashboards.
+
+Integrarea datelor din surse heterogene (structured și unstructured).
+
+Scalabilitatea pentru analiza petabyte-urilor de date.
+
+Exemplu: Construirea unui data warehouse care integrează date din CRM, ERP și rețele sociale pentru analiza comportamentului clienților.
+
+\subsection*{Persoane importante}
+
+Ralph Kimball
+
+Bill Inmon
+
+Surajit Chaudhuri
+
+\subsection*{Foruri importante}
+
+Conferințe: VLDB, ICDE, BI Congress
+
+Reviste: Data Warehousing Review, Decision Support Systems
+
+\section{Procesarea Tranzacțiilor}
+
+\subsection*{Activități principale}
+
+Teorie: Proprietățile ACID, algoritmi de control al concurenței (2PL, timestamp ordering), protocoale de recovery.
+
+Experiment: Testarea throughput-ului pentru workload-uri OLTP, evaluarea impact-ului deadlock-urilor și măsurarea timpilor de recovery.
+
+Design: Implementarea transaction managers, dezvoltarea strategiilor de logging și designul sistemelor de backup.
+
+\subsection*{Relații cu alte subdomenii}
+
+Fundamentală pentru majoritatea sistemelor DBMS.
+
+Extinsă în bazele de date distribuite cu algoritmi consensus.
+
+Adaptată pentru sisteme blockchain și distributed ledgers.
+
+\subsection*{Probleme importante și deschise}
+
+Optimizarea pentru workload-uri mixed OLTP/OLAP.
+
+Tranzacții distribuite în medii cloud cu latențe mari.
+
+Balansarea între consistență și performanță.
+
+Exemplu: Implementarea tranzacțiilor ACID într-un sistem de plăți distribuit cu cerințe de sub-secunde response time.
+
+\subsection*{Persoane importante}
+
+Jim Gray
+
+Philip Bernstein
+
+Gerhard Weikum
+
+\subsection*{Foruri importante}
+
+Conferințe: SIGMOD, VLDB, ICDE
+
+Reviste: ACM Transactions on Database Systems, IEEE Transactions on Knowledge and Data Engineering
+
+\section{Baze de Date în Memorie}
+
+\subsection*{Activități principale}
+
+Teorie: Algoritmi optimizați pentru RAM (lock-free data structures), compresie în memorie, procesarea vectorizată.
+
+Experiment: Benchmarking pentru aplicații real-time, testarea scalabilității pe servere multi-core și evaluarea consumului de memorie.
+
+Design: Dezvoltarea indexurilor în memorie, implementarea sistemelor de persistență și designul arhitecturilor hybrid (RAM + storage).
+
+\subsection*{Relații cu alte subdomenii}
+
+Accelerează sistemele OLTP și OLAP tradiționale.
+
+Integrare cu stream processing pentru analiza în timp real.
+
+Folosită în aplicații de high-frequency trading și gaming.
+
+\subsection*{Probleme importante și deschise}
+
+Gestionarea memoriei pentru dataset-uri mai mari decât RAM-ul disponibil.
+
+Durabilitatea datelor în cazul power failures.
+
+Cost-ul ridicat al RAM-ului pentru volume mari de date.
+
+Exemplu: Dezvoltarea unui sistem de recomandări în timp real care procesează milioane de evenimente pe secundă folosind doar memorie.
+
+\subsection*{Persoane importante}
+
+Hasso Plattner
+
+Mike Stonebraker
+
+Alexander Zeier
+
+\subsection*{Foruri importante}
+
+Conferințe: SIGMOD, VLDB, IMDM (In-Memory Data Management)
+
+Reviste: Proceedings of the VLDB Endowment, IEEE Data Engineering Bulletin
+
+\subsection*{Recuperarea Informațiilor (Information Retrieval)}
+
+Recuperarea informațiilor este domeniul informaticii care se ocupă cu găsirea materialelor (de obicei documente) de natură nestructurată (de obicei text) care satisfac o nevoie de informație dintr-o colecție mare (de obicei stocată pe computere).
+
+\subsection*{În cadrul informaticii, scopul recuperării informațiilor este de a}
+
+Dezvolta algoritmi și sisteme capabile să găsească rapid informații relevante din volume masive de date nestructurate.
+
+\subsection*{Aplică metode din statistică, lingvistică computațională și învățare automată pentru a crea sisteme care pot}
+
+Indexa și organiza informații
+
+Înțelege query-urile utilizatorilor
+
+Calcula relevanța documentelor
+
+Ranking și prezentarea rezultatelor
+
+\section{Motoare de Căutare Web}
+
+\subsection*{Activități principale}
+
+Teorie: Algoritmi de crawling web, indexarea documentelor, algoritmi de ranking (PageRank, TF-IDF), analiza link-urilor.
+
+Experiment: Evaluarea calității rezultatelor de căutare, testarea scalabilității pentru miliarde de pagini web și optimizarea timpilor de răspuns.
+
+Design: Dezvoltarea crawler-elor distribuite, implementarea sistemelor de indexare masive și designul interfețelor de căutare.
+
+\subsection*{Relații cu alte subdomenii}
+
+Folosește baze de date masive pentru stocarea indexurilor.
+
+Integrează machine learning pentru îmbunătățirea ranking-ului.
+
+Colaborează cu NLP pentru înțelegerea query-urilor.
+
+\subsection*{Probleme importante și deschise}
+
+Detectarea și combaterea spam-ului web.
+
+Personalizarea rezultatelor fără compromiterea privacy-ului.
+
+Indexarea conținutului multimedia și din aplicații mobile.
+
+Exemplu: Implementarea unui algoritm de ranking care combină relevanța textuală cu semnalele sociale pentru o căutare mai precisă.
+
+\subsection*{Persoane importante}
+
+Larry Page și Sergey Brin
+
+Jon Kleinberg
+
+Andrei Broder
+
+\subsection*{Foruri importante}
+
+Conferințe: SIGIR, WWW, WSDM (Web Search and Data Mining)
+
+Reviste: Information Retrieval Journal, ACM Transactions on Information Systems
+
+\section{Sisteme de Recomandare}
+
+\subsection*{Activități principale}
+
+Teorie: Algoritmi de collaborative filtering, content-based filtering, hybrid approaches și matrix factorization.
+
+Experiment: Evaluarea acurateței recomandărilor, testarea diversității și coverage-ului, măsurarea satisfacției utilizatorilor.
+
+Design: Implementarea sistemelor real-time, dezvoltarea algoritmilor cold-start și designul interfețelor de feedback.
+
+\subsection*{Relații cu alte subdomenii}
+
+Folosește machine learning pentru predicții.
+
+Integrează cu bazele de date pentru profilurile utilizatorilor.
+
+Colaborează cu data mining pentru descoperirea pattern-urilor.
+
+\subsection*{Probleme importante și deschise}
+
+Rezolvarea problemei cold-start pentru utilizatori noi.
+
+Balansarea între acuratețe și diversitate.
+
+Explicabilitatea recomandărilor pentru transparență.
+
+Exemplu: Dezvoltarea unui sistem de recomandare pentru streaming video care combină preferințele explicite cu comportamentul implicit de vizionare.
+
+\subsection*{Persoane importante}
+
+Yehuda Koren
+
+Joseph Konstan
+
+Bamshad Mobasher
+
+\subsection*{Foruri importante}
+
+Conferințe: RecSys, SIGIR, KDD
+
+Reviste: ACM Transactions on Intelligent Systems and Technology, User Modeling and User-Adapted Interaction
+
+\section{Text Mining și Natural Language Processing}
+
+\subsection*{Activități principale}
+
+Teorie: Modele de limbaj, analiza semantică, extragerea entităților, clasificarea textului și sentiment analysis.
+
+Experiment: Evaluarea pe corpus-uri standard, testarea algoritmilor pe texte în diferite limbi și domenii, măsurarea performanței pentru diverse task-uri NLP.
+
+Design: Dezvoltarea pipeline-urilor de procesare text, implementarea sistemelor de sumarizare automată și designul chatbot-urilor.
+
+\subsection*{Relații cu alte subdomenii}
+
+Bază pentru motoarele de căutare moderne.
+
+Integrare cu machine learning pentru clasificare automată.
+
+Folosește recuperarea informațiilor pentru extragerea de cunoștințe.
+
+\subsection*{Probleme importante și deschise}
+
+Înțelegerea contextului și ambiguității în text.
+
+Procesarea limbilor cu resurse limitate.
+
+Combaterea bias-ului în modelele de limbaj.
+
+Exemplu: Dezvoltarea unui sistem de analiză a sentimentului pentru review-uri de produse în multiple limbi cu acuratețe ridicată.
+
+\subsection*{Persoane importante}
+
+Christopher Manning
+
+Karen Spärck Jones
+
+Gerard Salton
+
+\subsection*{Foruri importante}
+
+Conferințe: ACL, EMNLP, SIGIR
+
+Reviste: Computational Linguistics, Information Processing and Management
+
+\section{Biblioteci Digitale și Arhive}
+
+\subsection*{Activități principale}
+
+Teorie: Metadata schemas, preservarea digitală, standardele de interoperabilitate și organizarea colecțiilor.
+
+Experiment: Testarea sistemelor de digitizare, evaluarea calității OCR-ului și măsurarea utilizabilității interfețelor.
+
+Design: Dezvoltarea sistemelor de catalogare, implementarea format-urilor de preservare și designul portal-urilor de acces.
+
+\subsection*{Relații cu alte subdomenii}
+
+Folosește baze de date pentru catalogarea resurselor.
+
+Integrare cu web search pentru descoperirea conținutului.
+
+Colaborează cu multimedia retrieval pentru conținut audio-vizual.
+
+\subsection*{Probleme importante și deschise}
+
+Preservarea pe termen lung a resurselor digitale.
+
+Interoperabilitatea între diferite sisteme de biblioteci.
+
+Accesibilitatea pentru utilizatori cu dizabilități.
+
+Exemplu: Implementarea unui sistem de bibliotecă digitală care permite căutarea full-text în milioane de documente istorice digitizate.
+
+\subsection*{Persoane importante}
+
+Michael Lesk
+
+Christine Borgman
+
+Edward Fox
+
+\subsection*{Foruri importante}
+
+Conferințe: JCDL (Joint Conference on Digital Libraries), iPRES
+
+Reviste: International Journal on Digital Libraries, Library Quarterly
+
+\section{Multimedia Information Retrieval}
+
+\subsection*{Activități principale}
+
+Teorie: Algoritmi de extragere a feature-urilor din imagini, video și audio, similarity metrics pentru conținut multimedia, indexarea semantică.
+
+Experiment: Evaluarea sistemelor de căutare imagini, testarea algoritmilor de recunoaștere video și benchmarking pe dataset-uri multimedia.
+
+Design: Dezvoltarea sistemelor de căutare prin imagine, implementarea detector-elor de obiecte și designul interfețelor multimodale.
+
+\subsection*{Relații cu alte subdomenii}
+
+Colaborează cu computer vision pentru analiza imaginilor.
+
+Folosește machine learning pentru clasificarea automată.
+
+Integrare cu baze de date pentru stocarea metadata-ului.
+
+\subsection*{Probleme importante și deschise}
+
+Semantic gap între feature-urile low-level și conceptele high-level.
+
+Scalabilitatea pentru colecții massive de media.
+
+Căutarea cross-modal (text la imagine, audio la video).
+
+Exemplu: Dezvoltarea unui sistem care permite căutarea video-urilor prin descrieri în limbaj natural și identificarea scenelor relevante.
+
+\subsection*{Persoane importante}
+
+Marcel Worring
+
+Cees Snoek
+
+Alan Smeaton
+
+\subsection*{Foruri importante}
+
+Conferințe: ACM Multimedia, ICMR (International Conference on Multimedia Retrieval)
+
+Reviste: ACM Transactions on Multimedia Computing, Multimedia Systems
+
+\section{Enterprise Search}
+
+\subsection*{Activități principale}
+
+Teorie: Integrarea surselor heterogene de date, autentificare și autorizare pentru căutare, personalizarea pentru contexte organizaționale.
+
+Experiment: Implementarea sistemelor enterprise, testarea performanței pe volume mari de documente corporate și evaluarea adoption-ului de către utilizatori.
+
+Design: Dezvoltarea connector-elor pentru diverse sisteme enterprise, implementarea dashboard-urilor executive și designul workflow-urilor de search.
+
+\subsection*{Relații cu alte subdomenii}
+
+Integrare strânsă cu bazele de date corporate.
+
+Folosește web search technologies adaptate pentru mediul intern.
+
+Colaborează cu knowledge management systems.
+
+\subsection*{Probleme importante și deschise}
+
+Securitatea și controlul accesului la informații sensibile.
+
+Integrarea cu legacy systems și formate proprietare.
+
+Menținerea indexurilor up-to-date pentru conținut dinamic.
+
+Exemplu: Implementarea unui sistem de căutare enterprise care permite găsirea rapidă a documentelor, emailurilor și înregistrărilor din toate sistemele companiei.
+
+\subsection*{Persoane importante}
+
+Susan Dumais
+
+Marti Hearst
+
+Gary Marchionini
+
+\subsection*{Foruri importante}
+
+Conferințe: SIGIR, Enterprise Search Summit
+
+Reviste: Enterprise Search and Discovery, Information Processing and Management
+
+\end{document}
