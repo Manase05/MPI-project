@@ -183,21 +183,107 @@ Comunitatea de inginerie software are mai multe forumuri esențiale pentru schim
 
 \subsection*{Key forums}
 
+
 \newpage
 \section{Graphics}
+
 \subsection*{Theory}
+Grafica digitală este un domeniu al informaticii care se ocupă cu prelucrarea imaginilor folosind un calculator. Acesta este un domeniu vast, cu impact în multe arii ale informaticii, cât și ale artei.
+Printre aceste domenii se numără:
+\begin{itemize}
+    \item interfața de utilizator, GUI: modul principal în care un utilizator intereacționează cu dispozitiv modern
+    
+    \item animație și efecte vizuale în filme;
+    
+    \item modelarea 3D pentru proiectare asistată de calculator (CAD): folosită în multe domenii, printre care film, arhitectură, și industrii industriale(auto, spațială, etc.);
+
+    \item jocuri video, realitate augmentată, realitate virtuală;
+    
+    \item recunoașterea și prelucrarea imaginilor în inteligența artificială;
+
+    \item vizualizarea datelor științifice și tehnice prin grafice;
+\end{itemize}
+\bigskip
+Astfel, în forma ei cea mai simplă, grafica poate fi clasificată în:
+\begin{itemize}
+    \item \textbf{grafica raster} – imagini bazate pe pixeli, cea mai comună;
+    \item \textbf{grafica vectorială} – imagini descrise prin forme geometrice, deobicei folosită în logo-uri și ilustrații scalabile.
+\end{itemize}
+
+\textbf{Randarea} este un termen important în acest domeniu, și reprezintă procesul prin care rezultă o imagine în două dimensiuni prin folosirea a diverse programe din modele 3D și informații adiționale despre lumină, perspectivă, efecte și texturi. 
+
 
 \subsection*{Experiment}
+Experimentele în acest domeniu au de a face cu explorarea a noi moduri de iluminare și randare, pentru avansul spre scene cât mai realiste, și ca consecință optimizarea performanței și a aparaturii. 
+
+În plus, plăcile grafice/video sunt constant în dezvoltare, experimentându-se cu diverse arhitecturi și idei pentru a se adapta la cerințele constant în evoluție ale domeniului(texturi, algoritmi) și a implementa funcțional tehnologiile din spate. 
+
+\bigskip
+Un alt câmp experimental este integrarea sistemelor de inteligență artificială în aceste procese de iluminare și eliminare a artefactelor de randare. Spre exemplu,  Nvidia antrenează 24/7 un AI dedicat optimizării tehnologiei sale DLSS de upscaling, care are scopul de a menține o rată continuă de cadre în aplicările randării în timp real.
+
 
 \subsection*{Design}
+Design-ul în grafica pe calculator se referă atât la arhitectura hardware, cât și la aspectele de interfață și experiență de utilizare.
+
+\bigskip
+Evoluția GPU-urilor (plăci grafice/video) a fost esențială pentru dezvoltarea randării eficiente. Un GPU modern este capabil să execute calcule paralele la scară largă, prin care face posibilă randarea scenelor complexe, cu tehnologii avansate de iluminare și corecție, cât și randarea în timp real a scenelor în subdomeniile jocurilor video și a realității virtuale/augmentate.
+
+Astfel, design-ul cât mai eficient al acestei componente hardware este un aspect crucial în domeniul graficii digitale.
+
+\bigskip
+Pe lângă hardware, design-ul implică și crearea unui mediu de interacțiune om-calculator, prin alegerea culorilor, a layout-ului și a animațiilor, aspect abordat de dezvoltatori în domeniul HCI în orice proiect modern, de la sisteme de operare la aplicațiile pe care acestea le conțin.
+
 
 \subsection*{Relations with other subfields}
+Grafica digitală este un subdomeniu larg, care se leagă de multe subdomenii ale informaticii: 
+\begin{itemize}
+    \item \textbf{Interacțiunea om-calculator}:  intefețele de utilizator, GUI;
+    \item \textbf{Inteligența artificială}: generarea și recunoașterea imaginilor de către AI;
+    \item \textbf{Arhitectura calculatoarelor}: pentru randarea grafică mai complexă, în special pentru jocuri video și animație, multe calculatoare moderne folosesc componente dedicate pentru procesarea video, plăci video;
+    \item \textbf{Algoritmi și structuri de date}: algoritmii sunt folosiți frecvent în acest domeniu, printre care cei de rasterizare, ray tracing, path tracing;
+    \item \textbf{Sisteme de operare}: cu excepția unor cazuri speciale, sistemele de operare moderne (Windows, Mac, Linux, Android) folosesc interfețe grafice.
+\end{itemize}
 
 \subsection*{Major problems}
+Acest subdomeniu are mai multe provocări curente:
+\begin{itemize}
+    \item optimizarea costurilor randării in timp real a scenelor din ce în ce mai complexe;
+    \item integrarea și optimizarea tehnicilor de iluminare realiste: ray tracing, path tracing;
+    \item evoluția tehnicilor de upscaling, prin algoritmi și AI;
+    \item reducerea artefactelor produse în urma randării: antialiasing, denoising.
+\end{itemize}
+
 
 \subsection*{Influencial figures}
-
+\begin{itemize}
+    \item \textbf{Ivan Sutherland} - considerat tatăl graficii digitale. A introdus concepte foarte importante, printre care modelarea 3D și prima interfață grafică "Sketchpad";
+    \item \textbf{Charles Csuri} - un pionier a artei digitale și a animației, fiind persoana care a creat printre primele piese de artă digitală, Sine Curve Man, folosind funcții matematice;
+    \item \textbf{Donald P. Greenberg} - un inovator în grafică, Greenberg a scris multe articole în domeniu, și a servit drept mentor și profesor pentru multe alte figuri importante în domeniu;
+    \item \textbf{Alvy Ray Smith și Edwin Catmull} - informaticieni și animatori american, co-fondatori Pixar.
+\end{itemize}
 \subsection*{Key forums}
+Grafica digitală este un domeniu foarte activ al informaticii, astfel că există multiple foruri importante:
+\begin{itemize}
+    \item \textbf{Conferințe}:
+    \begin{itemize}
+        \item SYSGRAPH, organizată in fiecare an încă din 1974 în America de Nord;
+        \item SYSGraph Asia, organizată din 2008 în Asia;
+        \item Eurographics, asociație europeană organizatoare de conferințe si evenimente în cadrul graficii digitale.
+    \end{itemize}
+    
+    \item \textbf{Reviste}:
+    \begin{itemize}
+        \item Computational Visual Media;
+        \item IEEE Transactions on Visualization and Computer Graphics;
+        \item ACM Transactions on Graphics.
+    \end{itemize}  
+    
+    \item  \textbf{Dimensiunea locală (UVT, Timișoara)}: 
+    \begin{itemize}
+        \item Profilul de Design Grafic;
+        \item Cursuri precum "Prelucrarea imaginilor", "Vedere artificială pentru vehicule" oferite în cadrul facultății de matematică informatică.
+    \end{itemize}
+\end{itemize}
 
 \newpage
 
