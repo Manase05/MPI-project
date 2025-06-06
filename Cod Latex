@@ -1100,82 +1100,81 @@ Grafica digitală este un domeniu foarte activ al informaticii, astfel că exist
 
 \newpage
 
-\section{Human–Computer Interaction}
+\section{Interacțiunea Om–Calculator}
 
-\subsection*{Theory}
-Theoretical foundations of HCI include:
+\subsection*{Teorie}
+Fundamentele teoretice ale interacțiunii om–calculator (HCI) includ:
 \begin{itemize}
-  \item Cognitive models (e.g., GOMS, Norman's Action Theory)
-  \item Activity Theory for understanding complex interaction contexts
-  \item Empirical laws (e.g., Fitts' Law, Hick's Law)
-  \item User-Centered Design principles and methodologies
+\item Modele cognitive (de exemplu, GOMS, Teoria Acțiunii a lui Norman)
+\item Teoria activității pentru înțelegerea contextelor complexe de interacțiune
+\item Legi empirice (de exemplu, Legea lui Fitts, Legea lui Hick)
+\item Principii și metodologii ale proiectării centrate pe utilizator
 \end{itemize}
 
 \subsection*{Experiment}
-Experimental methods in HCI involve:
+Metodele experimentale în HCI includ:
 \begin{itemize}
-  \item Usability testing of interactive systems
-  \item Field studies (observations, contextual interviews)
-  \item Controlled experiments on user performance and behavior
-  \item A/B testing in web and mobile applications
+\item Testarea gradului de utilizare (usability) a sistemelor interactive
+\item Studii de teren (observații, interviuri contextuale)
+\item Experimente controlate privind performanța și comportamentul utilizatorilor
+\item Testare A/B în aplicații web și mobile
 \end{itemize}
 
-\subsection*{Design}
-Design activities in HCI focus on:
+\subsection*{Proiectare}
+Activitățile de proiectare în HCI se concentrează pe:
 \begin{itemize}
-  \item Rapid prototyping (low and high fidelity)
-  \item Heuristic evaluation (e.g., Nielsen’s heuristics)
-  \item UI/UX design with wireframes, storyboards, and personas
-  \item Participatory and inclusive design approaches
+\item Prototipare rapidă (cu fidelitate scăzută și ridicată)
+\item Evaluare euristică (de exemplu, euristicile lui Nielsen)
+\item Design UI/UX folosind schițe de interfețe (wireframes), storyboard-uri și personaje tip (personas)
+\item Abordări participative și incluzive în proiectare
 \end{itemize}
 
-\subsection*{Relations with other subfields}
+\subsection*{Relații cu alte subdomenii}
 \begin{itemize}
-  \item \textbf{Artificial Intelligence} – Adaptive interfaces, intelligent agents
-  \item \textbf{Computer Graphics} – Visual interfaces, AR/VR systems
-  \item \textbf{Software Engineering} – UI frameworks, design patterns (e.g., MVC)
-  \item \textbf{Networking} – Interactive distributed and collaborative systems
-  \item \textbf{Cognitive Psychology} – Human behavior modeling and interface response
+\item \textbf{Inteligența Artificială} – Interfețe adaptive, agenți inteligenți
+\item \textbf{Grafică pe calculator} – Interfețe vizuale, sisteme AR/VR
+\item \textbf{Ingineria software} – Framework-uri UI, tipare de proiectare (de ex., MVC)
+\item \textbf{Rețelistică} – Sisteme interactive distribuite și colaborative
+\item \textbf{Psihologia cognitivă} – Modelarea comportamentului uman și reacția interfeței
 \end{itemize}
 
-\subsection*{Major problems}
+\subsection*{Probleme majore}
 \begin{itemize}
-  \item \textbf{Accessibility} – How to design for users with disabilities?
-  \item \textbf{Natural interaction} – How to achieve intuitive voice, gesture, and eye-based interaction?
-  \item \textbf{Virtual and Augmented Reality} – How to minimize discomfort while maximizing immersion?
-  \item \textbf{Ethics in HCI} – How to avoid manipulative design (dark patterns)?
-  \item \textbf{Explainability} – How to design interfaces that make AI systems transparent?
+\item \textbf{Accesibilitate} – Cum proiectăm pentru utilizatorii cu dizabilități?
+\item \textbf{Interacțiune naturală} – Cum obținem interacțiune intuitivă prin voce, gesturi și privire?
+\item \textbf{Realitate Virtuală și Augmentată} – Cum minimizăm disconfortul și maximizăm imersiunea?
+\item \textbf{Etica în HCI} – Cum evităm design-ul manipulator (dark patterns)?
+\item \textbf{Explicabilitate} – Cum proiectăm interfețe care fac sistemele AI transparente?
 \end{itemize}
 
-\subsection*{Influential figures}
+\subsection*{Figuri influente}
 \begin{itemize}
-  \item \textbf{Donald Norman} – Author of “The Design of Everyday Things”
-  \item \textbf{Ben Shneiderman} – Introduced direct manipulation and HCI principles
-  \item \textbf{Stuart Card} – Co-creator of GOMS model for user interaction
-  \item \textbf{Alan Dix} – Renowned researcher in emerging interaction paradigms
-  \item \textbf{Yvonne Rogers} – Expert in interaction design and ubiquitous computing
+\item \textbf{Donald Norman} – Autor al cărții „The Design of Everyday Things”
+\item \textbf{Ben Shneiderman} – A introdus manipularea directă și principii ale HCI
+\item \textbf{Stuart Card} – Co-creator al modelului GOMS pentru interacțiunea utilizatorului
+\item \textbf{Alan Dix} – Cercetător renumit în paradigme emergente de interacțiune
+\item \textbf{Yvonne Rogers} – Expertă în design-ul interacțiunii și informatică ubicuă
 \end{itemize}
 
-\subsection*{Key forums}
+\subsection*{Foruri de referință}
 \begin{itemize}
-  \item \textbf{Major international conferences:}
-  \begin{itemize}
-    \item CHI – ACM Conference on Human Factors in Computing Systems
-    \item UIST – ACM Symposium on User Interface Software and Technology
-    \item IUI – International Conference on Intelligent User Interfaces
-  \end{itemize}
-  \item \textbf{Leading journals:}
-  \begin{itemize}
-    \item ACM Transactions on Computer–Human Interaction (TOCHI)
-    \item Human–Computer Interaction Journal (Taylor \& Francis)
-  \end{itemize}
-  \item \textbf{Local dimension (University of the West, Timișoara):}
-  \begin{itemize}
-    \item HCI research groups within the Department of Computer Science, FMI, UVT
-    \item Courses such as “Human–Computer Interaction”, “User Experience Design” offered in the Informatics program
-  \end{itemize}
+\item \textbf{Conferințe internaționale importante:}
+\begin{itemize}
+\item CHI – Conferința ACM privind factorii umani în sistemele informatice
+\item UIST – Simpozionul ACM despre software și tehnologie pentru interfețe utilizator
+\item IUI – Conferința internațională despre interfețe utilizator inteligente
 \end{itemize}
-
+\item \textbf{Reviste de top:}
+\begin{itemize}
+\item ACM Transactions on Computer–Human Interaction (TOCHI)
+\item Human–Computer Interaction Journal (Taylor & Francis)
+\end{itemize}
+\item \textbf{Dimensiune locală (Universitatea de Vest din Timișoara):}
+\begin{itemize}
+\item Grupuri de cercetare HCI în cadrul Departamentului de Informatică, FMI, UVT
+\item Cursuri precum „Interacțiune Om–Calculator”, „Designul Experienței Utilizatorului” oferite în cadrul programului de Informatică
+\end{itemize}
+\end{itemize}
 
 \newpage
 \section{Computational Science}
